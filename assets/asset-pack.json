@@ -1,0 +1,463 @@
+{
+    "section1": {
+        "files": [
+            {
+                "url": "assets/images/2.jpg",
+                "type": "image",
+                "key": "2"
+            },
+            {
+                "url": "assets/images/3.jpg",
+                "type": "image",
+                "key": "3"
+            },
+            {
+                "url": "assets/images/5.jpg",
+                "type": "image",
+                "key": "5"
+            },
+            {
+                "url": "assets/images/6.jpg",
+                "type": "image",
+                "key": "6"
+            },
+            {
+                "url": "assets/images/7.jpg",
+                "type": "image",
+                "key": "7"
+            },
+            {
+                "url": "assets/images/9.jpg",
+                "type": "image",
+                "key": "9"
+            },
+            {
+                "url": "assets/images/bg-image.png",
+                "type": "image",
+                "key": "bg-image"
+            },
+            {
+                "url": "assets/images/button_addcoin-sheet0.png",
+                "type": "image",
+                "key": "button_addcoin-sheet0"
+            },
+            {
+                "url": "assets/images/button_arrow-sheet0.png",
+                "type": "image",
+                "key": "button_arrow-sheet0"
+            },
+            {
+                "url": "assets/images/button_back-sheet0.png",
+                "type": "image",
+                "key": "button_back-sheet0"
+            },
+            {
+                "url": "assets/images/button_big_green-sheet0.png",
+                "type": "image",
+                "key": "button_big_green-sheet0"
+            },
+            {
+                "url": "assets/images/button_close-sheet0.png",
+                "type": "image",
+                "key": "button_close-sheet0"
+            },
+            {
+                "url": "assets/images/button_options-sheet1.png",
+                "type": "image",
+                "key": "button_options-sheet1"
+            },
+            {
+                "url": "assets/images/button_options-sheet2.png",
+                "type": "image",
+                "key": "button_options-sheet2"
+            },
+            {
+                "url": "assets/images/button_present-sheet0.png",
+                "type": "image",
+                "key": "button_present-sheet0"
+            },
+            {
+                "url": "assets/images/button_winner-sheet0 (1).png",
+                "type": "image",
+                "key": "button_winner-sheet0 (1)"
+            },
+            {
+                "url": "assets/images/button_winner-sheet0 (1) (1).png",
+                "type": "image",
+                "key": "button_winner-sheet0 (1) (1)"
+            },
+            {
+                "url": "assets/images/button_winner-sheet0 (1) (2).png",
+                "type": "image",
+                "key": "button_winner-sheet0 (1) (2)"
+            },
+            {
+                "url": "assets/images/buttons_main-sheet0.png",
+                "type": "image",
+                "key": "buttons_main-sheet0"
+            },
+            {
+                "url": "assets/images/Cat/cat_part1.png",
+                "type": "image",
+                "key": "cat_part"
+            },
+            {
+                "url": "assets/images/Cat/cat_part2.png",
+                "type": "image",
+                "key": "cat_part_1"
+            },
+            {
+                "url": "assets/images/Cat/cat_part3.png",
+                "type": "image",
+                "key": "cat_part_2"
+            },
+            {
+                "url": "assets/images/cat_part1.png",
+                "type": "image",
+                "key": "cat_part1"
+            },
+            {
+                "url": "assets/images/Cat/cat_part10.png",
+                "type": "image",
+                "key": "cat_part10"
+            },
+            {
+                "url": "assets/images/Cat/cat_part11.png",
+                "type": "image",
+                "key": "cat_part11"
+            },
+            {
+                "url": "assets/images/Cat/cat_part12.png",
+                "type": "image",
+                "key": "cat_part12"
+            },
+            {
+                "url": "assets/images/Cat/cat_part13.png",
+                "type": "image",
+                "key": "cat_part13"
+            },
+            {
+                "url": "assets/images/Cat/cat_part14.png",
+                "type": "image",
+                "key": "cat_part14"
+            },
+            {
+                "url": "assets/images/Cat/cat_part15.png",
+                "type": "image",
+                "key": "cat_part15"
+            },
+            {
+                "url": "assets/images/Cat/cat_part16.png",
+                "type": "image",
+                "key": "cat_part16"
+            },
+            {
+                "url": "assets/images/cat_part2.png",
+                "type": "image",
+                "key": "cat_part2"
+            },
+            {
+                "url": "assets/images/cat_part3.png",
+                "type": "image",
+                "key": "cat_part3"
+            },
+            {
+                "url": "assets/images/Cat/cat_part4.png",
+                "type": "image",
+                "key": "cat_part4"
+            },
+            {
+                "url": "assets/images/Cat/cat_part5.png",
+                "type": "image",
+                "key": "cat_part5"
+            },
+            {
+                "url": "assets/images/Cat/cat_part6.png",
+                "type": "image",
+                "key": "cat_part6"
+            },
+            {
+                "url": "assets/images/Cat/cat_part7.png",
+                "type": "image",
+                "key": "cat_part7"
+            },
+            {
+                "url": "assets/images/Cat/cat_part8.png",
+                "type": "image",
+                "key": "cat_part8"
+            },
+            {
+                "url": "assets/images/Cat/cat_part9.png",
+                "type": "image",
+                "key": "cat_part9"
+            },
+            {
+                "url": "assets/images/Category.png",
+                "type": "image",
+                "key": "Category"
+            },
+            {
+                "url": "assets/images/Create.png",
+                "type": "image",
+                "key": "Create"
+            },
+            {
+                "url": "src/Prefab/CurtenPrefab.js",
+                "type": "script",
+                "key": "CurtenPrefab"
+            },
+            {
+                "url": "assets/images/Daco_1495093.png",
+                "type": "image",
+                "key": "Daco_1495093"
+            },
+            {
+                "url": "assets/images/Daily.png",
+                "type": "image",
+                "key": "Daily"
+            },
+            {
+                "url": "assets/images/download (2).png",
+                "type": "image",
+                "key": "download (2)"
+            },
+            {
+                "url": "assets/images/elegant-golden-frame-free-png.webp",
+                "type": "image",
+                "key": "elegant-golden-frame-free-png"
+            },
+            {
+                "url": "assets/images/fav_puzzle.png",
+                "type": "image",
+                "key": "fav_puzzle"
+            },
+            {
+                "url": "assets/images/Filter.png",
+                "type": "image",
+                "key": "Filter"
+            },
+            {
+                "url": "assets/images/floppy-disk.png",
+                "type": "image",
+                "key": "floppy-disk"
+            },
+            {
+                "url": "assets/images/floppy-disk (1).png",
+                "type": "image",
+                "key": "floppy-disk (1)"
+            },
+            {
+                "url": "assets/images/galleryback_0.png",
+                "type": "image",
+                "key": "galleryback_0"
+            },
+            {
+                "url": "src/scripts/GameManager.js",
+                "type": "script",
+                "key": "GameManager"
+            },
+            {
+                "url": "assets/images/button_gold_win-sheet0 (2).png",
+                "type": "image",
+                "key": "gold-button"
+            },
+            {
+                "url": "assets/images/button_gold_win-sheet0.png",
+                "type": "image",
+                "key": "gold-button-black"
+            },
+            {
+                "url": "assets/images/button_big_green-sheet0 (1).png",
+                "type": "image",
+                "key": "greenButtonLight"
+            },
+            {
+                "url": "assets/images/Hint.png",
+                "type": "image",
+                "key": "Hint"
+            },
+            {
+                "url": "assets/images/icon_malahit-sheet0.png",
+                "type": "image",
+                "key": "icon_malahit-sheet0"
+            },
+            {
+                "url": "assets/images/img_continuegame-sheet0.png",
+                "type": "image",
+                "key": "img_continuegame-sheet0"
+            },
+            {
+                "url": "assets/images/img_myphotos-sheet0.png",
+                "type": "image",
+                "key": "img_myphotos-sheet0"
+            },
+            {
+                "url": "assets/images/img_newgame-sheet0.png",
+                "type": "image",
+                "key": "img_newgame-sheet0"
+            },
+            {
+                "url": "src/scripts/InputManager.js",
+                "type": "script",
+                "key": "InputManager"
+            },
+            {
+                "url": "assets/images/jigsaw_logo.png",
+                "type": "image",
+                "key": "jigsaw_logo"
+            },
+            {
+                "url": "assets/images/line.png",
+                "type": "image",
+                "key": "line"
+            },
+            {
+                "url": "assets/images/line_game-sheet0.png",
+                "type": "image",
+                "key": "line_game-sheet0"
+            },
+            {
+                "url": "assets/images/loading_logo-sheet0.png",
+                "type": "image",
+                "key": "loading_logo-sheet0"
+            },
+            {
+                "url": "assets/images/loading_logo-sheet1.png",
+                "type": "image",
+                "key": "loading_logo-sheet1"
+            },
+            {
+                "url": "src/components/OnHoverComponent.js",
+                "type": "script",
+                "key": "OnHoverComponent"
+            },
+            {
+                "url": "assets/images/green_parda.png",
+                "type": "image",
+                "key": "openingCurtens"
+            },
+            {
+                "url": "assets/images/panel_h.png",
+                "type": "image",
+                "key": "panel_h"
+            },
+            {
+                "url": "assets/images/part10.png",
+                "type": "image",
+                "key": "part10"
+            },
+            {
+                "url": "assets/images/part4.png",
+                "type": "image",
+                "key": "part4"
+            },
+            {
+                "url": "assets/images/part9.png",
+                "type": "image",
+                "key": "part9"
+            },
+            {
+                "url": "assets/images/pngfind.com-gold-frame-png-578767.png",
+                "type": "image",
+                "key": "pngfind.com-gold-frame-png-578767"
+            },
+            {
+                "url": "assets/images/pngwing.com (4).png",
+                "type": "image",
+                "key": "pngwing.com (4)"
+            },
+            {
+                "url": "assets/images/present-sheet0.png",
+                "type": "image",
+                "key": "present-sheet0"
+            },
+            {
+                "url": "assets/images/preview_box.png",
+                "type": "image",
+                "key": "preview_box"
+            },
+            {
+                "url": "src/Prefab/ProfilePrefab.js",
+                "type": "script",
+                "key": "ProfilePrefab"
+            },
+            {
+                "url": "assets/images/puzzleBorder.png",
+                "type": "image",
+                "key": "puzzleBorder"
+            },
+            {
+                "url": "assets/images/Sample.png",
+                "type": "image",
+                "key": "Sample"
+            },
+            {
+                "url": "assets/images/buttons_main-sheet1.png",
+                "type": "image",
+                "key": "setting-button"
+            },
+            {
+                "url": "assets/images/share.png",
+                "type": "image",
+                "key": "share"
+            },
+            {
+                "url": "assets/images/share (1).png",
+                "type": "image",
+                "key": "share (1)"
+            },
+            {
+                "url": "assets/images/ShowEdges.png",
+                "type": "image",
+                "key": "ShowEdges"
+            },
+            {
+                "url": "assets/images/Shuffle.png",
+                "type": "image",
+                "key": "Shuffle"
+            },
+            {
+                "url": "src/scripts/SocketManager.js",
+                "type": "script",
+                "key": "SocketManager"
+            },
+            {
+                "url": "src/scripts/SoundManager.js",
+                "type": "script",
+                "key": "SoundManager"
+            },
+            {
+                "url": "assets/images/window.png",
+                "type": "image",
+                "key": "window"
+            },
+            {
+                "url": "assets/images/window_dekor-sheet0.png",
+                "type": "image",
+                "key": "window_dekor-sheet0"
+            },
+            {
+                "url": "assets/images/wood_back.png",
+                "type": "image",
+                "key": "wood_back"
+            },
+            {
+                "url": "assets/images/Zoom In.png",
+                "type": "image",
+                "key": "Zoom In"
+            },
+            {
+                "url": "assets/images/Zoom Out.png",
+                "type": "image",
+                "key": "Zoom Out"
+            }
+        ]
+    },
+    "meta": {
+        "app": "Phaser Editor 2D - Asset Pack Editor",
+        "contentType": "phasereditor2d.pack.core.AssetContentType",
+        "url": "https://phasereditor2d.com",
+        "version": 2,
+        "showAllFilesInBlocks": false
+    }
+}

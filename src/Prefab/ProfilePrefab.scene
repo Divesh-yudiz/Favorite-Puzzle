@@ -1,0 +1,220 @@
+{
+    "id": "2bde1c9e-23a1-43a1-8cc2-db4afbbed0a2",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "f9b3d92d-5fa3-48b3-adea-fe2b53586f4b",
+            "label": "container_1",
+            "components": [],
+            "x": -40,
+            "y": -67,
+            "list": [
+                {
+                    "type": "Rectangle",
+                    "id": "01799c2b-f6d9-4671-b55d-4a1eb4a8a715",
+                    "label": "rectangle_1",
+                    "components": [],
+                    "isFilled": true,
+                    "fillColor": "#020202",
+                    "fillAlpha": 0.3,
+                    "width": 1920,
+                    "height": 1200
+                },
+                {
+                    "type": "Image",
+                    "id": "dabb5aff-bd68-45b8-a6ac-1bcc945e007d",
+                    "label": "panel_h",
+                    "components": [],
+                    "texture": {
+                        "key": "panel_h"
+                    },
+                    "x": 40,
+                    "y": 67,
+                    "scaleX": 4,
+                    "scaleY": 5
+                },
+                {
+                    "type": "Image",
+                    "id": "31774448-0fbc-466d-95bc-846a40f07a30",
+                    "label": "pngwing_com__4_",
+                    "components": [],
+                    "texture": {
+                        "key": "pngwing.com (4)"
+                    },
+                    "x": 42,
+                    "y": 5,
+                    "scaleX": 0.29,
+                    "scaleY": 0.3
+                },
+                {
+                    "type": "Image",
+                    "id": "89e1b1a4-a37b-4304-a25b-345e5d4b3646",
+                    "label": "pngfind_com_gold_frame_png_578767",
+                    "components": [],
+                    "texture": {
+                        "key": "pngfind.com-gold-frame-png-578767"
+                    },
+                    "x": 41,
+                    "y": 3,
+                    "scaleX": 0.1,
+                    "scaleY": 0.1
+                },
+                {
+                    "type": "Text",
+                    "id": "418bb5db-db16-4a02-8a30-efdaee1b4d12",
+                    "label": "playerNameText",
+                    "components": [],
+                    "x": -51,
+                    "y": 97,
+                    "text": "Favorite Player",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#f9d600ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "e91a008a-0895-411e-b8f8-19e9da632910",
+                    "label": "window_dekor_sheet0",
+                    "components": [],
+                    "texture": {
+                        "key": "window_dekor-sheet0"
+                    },
+                    "x": -368,
+                    "y": -72,
+                    "scaleX": 1.5,
+                    "scaleY": 1.5,
+                    "angle": -62
+                },
+                {
+                    "type": "Image",
+                    "id": "cb2df78e-3a4a-452e-9eec-008cf4a6f6bc",
+                    "label": "window_dekor_sheet",
+                    "components": [],
+                    "texture": {
+                        "key": "window_dekor-sheet0"
+                    },
+                    "x": -312,
+                    "y": -138,
+                    "scaleX": 1.5,
+                    "scaleY": 1.5,
+                    "angle": -49,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "49b56857-842e-470e-a150-24c82737f7fc",
+                    "label": "window_dekor_sheet_1",
+                    "components": [],
+                    "texture": {
+                        "key": "window_dekor-sheet0"
+                    },
+                    "x": 374,
+                    "y": -142,
+                    "scaleX": 1.5,
+                    "scaleY": 1.5,
+                    "angle": 34
+                },
+                {
+                    "type": "Image",
+                    "id": "14a15f6a-ff06-4266-8cb4-0cc6b9f9eddf",
+                    "label": "window_dekor_sheet_2",
+                    "components": [],
+                    "texture": {
+                        "key": "window_dekor-sheet0"
+                    },
+                    "x": 436,
+                    "y": -89,
+                    "scaleX": 1.5,
+                    "scaleY": 1.5,
+                    "angle": 43,
+                    "flipX": true
+                },
+                {
+                    "type": "Image",
+                    "id": "e090827f-0851-409d-9f1c-b393f32c8f9c",
+                    "label": "button_winner_sheet0__1___1_",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "texture": {
+                        "key": "button_winner-sheet0 (1) (1)"
+                    },
+                    "x": 221,
+                    "y": 210,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Image",
+                    "id": "981a8c9b-6769-4ea5-a756-3e2709ff48c1",
+                    "label": "button_winner_sheet0__1___2_",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "texture": {
+                        "key": "button_winner-sheet0 (1) (2)"
+                    },
+                    "x": -125,
+                    "y": 208,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                },
+                {
+                    "type": "Text",
+                    "id": "4ba90b92-b4ef-487a-8626-367383a04c19",
+                    "label": "playerNameText_1",
+                    "components": [],
+                    "x": -195,
+                    "y": 265,
+                    "text": "Achievement",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "25px",
+                    "color": "#f9d600ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "6cff14e8-5ee1-4031-acaa-9878b305c7fa",
+                    "label": "playerNameText_2",
+                    "components": [],
+                    "x": 153,
+                    "y": 265,
+                    "text": "Leaderboards",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "25px",
+                    "color": "#f9d600ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "df5936bc-7f14-4837-bcfe-13c625974c3d",
+                    "label": "button_close_sheet0",
+                    "components": [
+                        "PushOnClick",
+                        "OnHoverComponent"
+                    ],
+                    "texture": {
+                        "key": "button_close-sheet0"
+                    },
+                    "x": 420,
+                    "y": -132,
+                    "scaleX": 1.2,
+                    "scaleY": 1.2
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}

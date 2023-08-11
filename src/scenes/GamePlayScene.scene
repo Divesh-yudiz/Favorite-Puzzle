@@ -1,0 +1,279 @@
+{
+    "id": "7335f763-e08c-4f8e-920f-1bc9ed49ad08",
+    "sceneType": "SCENE",
+    "settings": {
+        "preloadPackFiles": [],
+        "createMethodName": "editorCreate",
+        "sceneKey": "GamePlayScene",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Image",
+            "id": "8bbc6d1c-fda1-4fd1-850f-a4fe07bce892",
+            "label": "bg_image",
+            "components": [],
+            "texture": {
+                "key": "bg-image"
+            },
+            "x": 960,
+            "y": 540
+        },
+        {
+            "type": "Image",
+            "id": "e0728283-41cb-485a-a578-e5dc0be614f7",
+            "label": "window",
+            "components": [],
+            "texture": {
+                "key": "window"
+            },
+            "x": 1887,
+            "y": 540,
+            "scaleX": 2,
+            "scaleY": 2.3
+        },
+        {
+            "type": "Image",
+            "id": "768fefa6-e4c1-46e0-8c60-756582cce7da",
+            "label": "line_game_sheet0",
+            "components": [],
+            "texture": {
+                "key": "line_game-sheet0"
+            },
+            "x": 1473,
+            "y": 540,
+            "scaleY": 35
+        },
+        {
+            "type": "Image",
+            "id": "33d5793a-aaaf-4496-8507-5979a39320c3",
+            "label": "hint",
+            "components": [
+                "PushOnClick"
+            ],
+            "texture": {
+                "key": "Hint"
+            },
+            "x": 1857,
+            "y": 142,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Image",
+            "id": "9c18805a-d92c-49ae-b73f-fa936f2defa4",
+            "label": "zoom_In",
+            "components": [
+                "PushOnClick"
+            ],
+            "texture": {
+                "key": "Zoom In"
+            },
+            "x": 1857,
+            "y": 266,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Image",
+            "id": "a7cb9b4a-1063-4676-b0c1-1682e2cd9f68",
+            "label": "zoom_Out",
+            "components": [
+                "PushOnClick"
+            ],
+            "texture": {
+                "key": "Zoom Out"
+            },
+            "x": 1857,
+            "y": 401,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Image",
+            "id": "a07cd750-91ad-4fb8-b117-a6c011460978",
+            "label": "sample",
+            "components": [
+                "PushOnClick"
+            ],
+            "texture": {
+                "key": "Sample"
+            },
+            "x": 1857,
+            "y": 523,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Image",
+            "id": "ccd4eefb-a957-409e-b920-6344613ffdae",
+            "label": "showEdges",
+            "components": [
+                "PushOnClick"
+            ],
+            "texture": {
+                "key": "ShowEdges"
+            },
+            "x": 1857,
+            "y": 645,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Image",
+            "id": "bfa06cc7-c749-4946-950b-8ef8655e0981",
+            "label": "shuffle",
+            "components": [
+                "PushOnClick"
+            ],
+            "texture": {
+                "key": "Shuffle"
+            },
+            "x": 1857,
+            "y": 787,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Image",
+            "id": "605a01f8-5ef8-407a-ae1e-15b37bfb01d3",
+            "label": "button_options_sheet2",
+            "components": [],
+            "texture": {
+                "key": "button_options-sheet2"
+            },
+            "x": 1863,
+            "y": 976,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Image",
+            "id": "757e0526-fd31-47da-bb99-235e7f132569",
+            "label": "button_options_sheet",
+            "components": [],
+            "texture": {
+                "key": "button_options-sheet2"
+            },
+            "x": 1863,
+            "y": 976,
+            "scaleX": 1.5,
+            "scaleY": 1.5
+        },
+        {
+            "type": "Text",
+            "id": "4c4ba31e-6639-4a48-835a-7157e7318ac9",
+            "label": "text_1",
+            "components": [],
+            "x": 1857,
+            "y": 193,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Hint",
+            "fontFamily": "New Times Roman",
+            "fontSize": "20px",
+            "color": "#fcd928ff"
+        },
+        {
+            "type": "Text",
+            "id": "662cedbb-b2c7-4700-a70e-30a875319374",
+            "label": "text",
+            "components": [],
+            "x": 1857,
+            "y": 329.7177734375,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Zoom In",
+            "fontFamily": "New Times Roman",
+            "fontSize": "20px",
+            "color": "#fcd928ff"
+        },
+        {
+            "type": "Text",
+            "id": "faa2077c-4a1c-46d3-a1d5-9330f10f6abf",
+            "label": "text_2",
+            "components": [],
+            "x": 1857,
+            "y": 457.7177734375,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Zoom Out",
+            "fontFamily": "New Times Roman",
+            "fontSize": "20px",
+            "color": "#fcd928ff"
+        },
+        {
+            "type": "Text",
+            "id": "88111d96-4bde-43c2-a220-ae055d5afbcb",
+            "label": "text_3",
+            "components": [],
+            "x": 1857,
+            "y": 579.3021240234375,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Sample",
+            "fontFamily": "New Times Roman",
+            "fontSize": "20px",
+            "color": "#fcd928ff"
+        },
+        {
+            "type": "Text",
+            "id": "171c4195-b982-4ffe-a13b-796e814e18db",
+            "label": "text_4",
+            "components": [],
+            "x": 1857,
+            "y": 710.2825927734375,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Show Edges",
+            "fontFamily": "New Times Roman",
+            "fontSize": "20px",
+            "color": "#fcd928ff"
+        },
+        {
+            "type": "Text",
+            "id": "4e1083a8-d651-4e0b-bb41-3cdf485f951c",
+            "label": "text_5",
+            "components": [],
+            "x": 1857,
+            "y": 847.0607299804688,
+            "originX": 0.5,
+            "originY": 0.5,
+            "text": "Shuffle",
+            "fontFamily": "New Times Roman",
+            "fontSize": "20px",
+            "color": "#fcd928ff"
+        },
+        {
+            "type": "Container",
+            "id": "b86b8ee7-7476-4f30-aaf1-edfc42021e8c",
+            "label": "piecesContainer",
+            "scope": "CLASS",
+            "components": [],
+            "x": 1602,
+            "y": -53,
+            "list": []
+        },
+        {
+            "type": "Image",
+            "id": "c473731c-26ae-4005-a5bd-414f5e89e4fa",
+            "label": "puzzleBorder",
+            "components": [],
+            "texture": {
+                "key": "puzzleBorder"
+            },
+            "x": 745,
+            "y": 560,
+            "scaleX": 2.5,
+            "scaleY": 1.8
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
