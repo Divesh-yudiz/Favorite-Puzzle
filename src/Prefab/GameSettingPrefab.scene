@@ -1,0 +1,388 @@
+{
+    "id": "8ece2276-838c-443d-9cd9-e9651d496cc5",
+    "sceneType": "PREFAB",
+    "settings": {
+        "preloadMethodName": "",
+        "preloadPackFiles": [],
+        "createMethodName": "",
+        "borderWidth": 1920,
+        "borderHeight": 1080
+    },
+    "displayList": [
+        {
+            "type": "Container",
+            "id": "50903d05-2423-4b92-8536-ea810ed60c10",
+            "label": "container_1",
+            "components": [],
+            "x": -826,
+            "y": -524,
+            "list": [
+                {
+                    "type": "Image",
+                    "id": "9d285801-f202-469f-ac3c-d0a7449037f1",
+                    "label": "bg_image",
+                    "components": [],
+                    "texture": {
+                        "key": "bg-image"
+                    },
+                    "x": 826,
+                    "y": 524
+                },
+                {
+                    "type": "Image",
+                    "id": "4e1e1637-e3ae-4bf1-8e52-5546f7d9f723",
+                    "label": "line",
+                    "components": [],
+                    "texture": {
+                        "key": "line"
+                    },
+                    "x": 492,
+                    "y": 480,
+                    "scaleX": 7,
+                    "scaleY": 5
+                },
+                {
+                    "type": "Image",
+                    "id": "bbb8d874-4208-445f-9996-789035a55faa",
+                    "label": "button_back",
+                    "scope": "CLASS",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "texture": {
+                        "key": "button_back-sheet0"
+                    },
+                    "x": -1,
+                    "y": 72,
+                    "scaleX": 2,
+                    "scaleY": 2
+                },
+                {
+                    "type": "Image",
+                    "id": "b6c7fd33-db8e-49ea-b8fb-3460f23b62df",
+                    "label": "button_language_sheet0",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "texture": {
+                        "key": "button_language-sheet0"
+                    },
+                    "x": 366,
+                    "y": 479,
+                    "scaleX": 2,
+                    "scaleY": 2
+                },
+                {
+                    "type": "Image",
+                    "id": "917b90ea-a2fc-40e5-8783-7eeac2166e0b",
+                    "label": "button_info_sheet0",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "texture": {
+                        "key": "button_info-sheet0"
+                    },
+                    "x": 599,
+                    "y": 479,
+                    "scaleX": 1.6,
+                    "scaleY": 1.6
+                },
+                {
+                    "type": "Image",
+                    "id": "1c9f51ed-11ba-4615-8d5c-89e4687ed5bf",
+                    "label": "line_1",
+                    "components": [],
+                    "texture": {
+                        "key": "line"
+                    },
+                    "x": 1142,
+                    "y": 479,
+                    "scaleX": 7,
+                    "scaleY": 5
+                },
+                {
+                    "type": "Container",
+                    "id": "ac3f90fe-94ad-4a13-82a9-c7477639ac01",
+                    "label": "MusicButtonContainer",
+                    "scope": "CLASS",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "x": 826,
+                    "y": 524,
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "1a491c81-4c74-4157-b8ea-1d42e5a7bef3",
+                            "label": "soundBtnOff",
+                            "scope": "CLASS",
+                            "components": [],
+                            "texture": {
+                                "key": "toggleBtnOff"
+                            },
+                            "x": 214,
+                            "y": -45,
+                            "scaleX": 1.6,
+                            "scaleY": 1.6
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e07c7d5b-057d-4ada-ae7a-e1a394b43037",
+                            "label": "soundBtnOn",
+                            "scope": "CLASS",
+                            "components": [
+                                "ToggleButton"
+                            ],
+                            "texture": {
+                                "key": "toggleBtnOn"
+                            },
+                            "x": 215,
+                            "y": -45,
+                            "scaleX": 1.6,
+                            "scaleY": 1.6
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "422ebd3f-9ba9-4094-93d0-e93405ad5fed",
+                    "label": "MusicButtonContainer_1",
+                    "scope": "CLASS",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "4fb53634-7d49-486a-84c2-e4420ce97ed7",
+                            "label": "toggleBtnOff",
+                            "components": [
+                                "ToggleButton"
+                            ],
+                            "texture": {
+                                "key": "toggleBtnOff"
+                            },
+                            "x": 1277,
+                            "y": 474,
+                            "scaleX": 1.6,
+                            "scaleY": 1.6
+                        },
+                        {
+                            "type": "Image",
+                            "id": "9a99f13b-9e99-477a-880a-50741d552ef4",
+                            "label": "toggleBtnOn",
+                            "components": [
+                                "ToggleButton"
+                            ],
+                            "texture": {
+                                "key": "toggleBtnOn"
+                            },
+                            "x": 1277,
+                            "y": 474,
+                            "scaleX": 1.6,
+                            "scaleY": 1.6
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "26f7a400-ce7d-48d3-89f0-36ebddb00803",
+                    "label": "MusicButtonContainer_2",
+                    "scope": "CLASS",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "80653359-7e88-41fb-a67c-bb7e718d9dfb",
+                            "label": "button_switch_sheet_2",
+                            "components": [],
+                            "texture": {
+                                "key": "toggleBtnOff"
+                            },
+                            "x": 487,
+                            "y": 738,
+                            "scaleX": 1.6,
+                            "scaleY": 1.6
+                        },
+                        {
+                            "type": "Image",
+                            "id": "510301e9-2e34-4e7a-8e27-924262d9b26b",
+                            "label": "button_switch_sheet_3",
+                            "components": [
+                                "ToggleButton"
+                            ],
+                            "texture": {
+                                "key": "toggleBtnOn"
+                            },
+                            "x": 485,
+                            "y": 738,
+                            "scaleX": 1.6,
+                            "scaleY": 1.6
+                        }
+                    ]
+                },
+                {
+                    "type": "Container",
+                    "id": "2a7cf9a2-97d8-4194-81a6-8668c2e0b734",
+                    "label": "MusicButtonContainer_3",
+                    "scope": "CLASS",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "list": [
+                        {
+                            "type": "Image",
+                            "id": "bc74738c-0e97-44c4-b1a2-4f7d9b34f4eb",
+                            "label": "button_switch_sheet_4",
+                            "components": [],
+                            "texture": {
+                                "key": "toggleBtnOff"
+                            },
+                            "x": 1160,
+                            "y": 738,
+                            "scaleX": 1.6,
+                            "scaleY": 1.6
+                        },
+                        {
+                            "type": "Image",
+                            "id": "10e76e56-6ff4-47b1-80ae-d492ef62f1a0",
+                            "label": "lhnBtnOff",
+                            "scope": "CLASS",
+                            "components": [
+                                "ToggleButton"
+                            ],
+                            "texture": {
+                                "key": "toggleBtnOn"
+                            },
+                            "x": 1160,
+                            "y": 738,
+                            "scaleX": 1.6,
+                            "scaleY": 1.6
+                        }
+                    ]
+                },
+                {
+                    "type": "Text",
+                    "id": "2854accf-aa6c-40fb-a489-ade66976e9ad",
+                    "label": "languageText",
+                    "components": [],
+                    "x": 305,
+                    "y": 561,
+                    "text": "Language",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#ffdd09ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "b9b61509-4377-4d0d-bed4-03852fe56a1b",
+                    "label": "languageText_1",
+                    "components": [],
+                    "x": 573,
+                    "y": 561,
+                    "text": "Info",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#ffdd09ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "b60ff20c-57dc-4f33-b97a-59f852465141",
+                    "label": "languageText_2",
+                    "components": [],
+                    "x": 1006.5029296875,
+                    "y": 561,
+                    "text": "Sound",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#ffdd09ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "378295da-4318-4200-8f2e-5d7c4828be33",
+                    "label": "languageText_3",
+                    "components": [],
+                    "x": 1248.595947265625,
+                    "y": 561,
+                    "text": "Music",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#ffdd09ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "77c4635e-e879-422d-995c-9e5d48676fa9",
+                    "label": "languageText_4",
+                    "components": [],
+                    "x": 351,
+                    "y": 815,
+                    "text": "Realistic Game Mode",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#ffdd09ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "a34423cd-69d8-4522-98ec-bcbda61da11d",
+                    "label": "languageText_5",
+                    "components": [],
+                    "x": 1086,
+                    "y": 815,
+                    "text": "Left-Handed \nNavigation ",
+                    "align": "center",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#ffdd09ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "94b22abb-5786-47f3-b64e-3c20ac32ec0b",
+                    "label": "languageText_6",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "x": 386,
+                    "y": 259,
+                    "text": "Terms of Use",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#ffdd09ff"
+                },
+                {
+                    "type": "Text",
+                    "id": "62a3f252-49c0-41a7-815e-3524bad00980",
+                    "label": "languageText_7",
+                    "components": [
+                        "OnHoverComponent"
+                    ],
+                    "x": 1075,
+                    "y": 259,
+                    "text": "Privacy Policy",
+                    "fontFamily": "New Times Roman",
+                    "fontSize": "30px",
+                    "color": "#ffdd09ff"
+                },
+                {
+                    "type": "Image",
+                    "id": "830b10de-0186-47b0-bb33-fe6b163f323f",
+                    "label": "jigsaw_logo",
+                    "components": [],
+                    "texture": {
+                        "key": "jigsaw_logo"
+                    },
+                    "x": 824,
+                    "y": 144
+                }
+            ]
+        }
+    ],
+    "plainObjects": [],
+    "meta": {
+        "app": "Phaser Editor 2D - Scene Editor",
+        "url": "https://phasereditor2d.com",
+        "contentType": "phasereditor2d.core.scene.SceneContentType",
+        "version": 3
+    }
+}
