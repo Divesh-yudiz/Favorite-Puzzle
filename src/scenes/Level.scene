@@ -351,7 +351,21 @@
             "components": [],
             "x": 960,
             "y": 540,
-            "visible": true,
+            "visible": false,
+            "nestedPrefabs": []
+        },
+        {
+            "prefabId": "8ece2276-838c-443d-9cd9-e9651d496cc5",
+            "id": "40ea5f96-9b19-44a3-9ed0-2b61be3a5a7a",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "gameSettingPrefab",
+            "scope": "CLASS",
+            "components": [],
+            "x": 134,
+            "y": 16,
             "nestedPrefabs": []
         }
     ],

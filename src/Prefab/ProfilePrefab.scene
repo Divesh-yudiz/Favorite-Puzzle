@@ -194,7 +194,8 @@
                 {
                     "type": "Image",
                     "id": "df5936bc-7f14-4837-bcfe-13c625974c3d",
-                    "label": "button_close_sheet0",
+                    "label": "button_close",
+                    "scope": "CLASS",
                     "components": [
                         "PushOnClick",
                         "OnHoverComponent"

@@ -17,6 +17,12 @@
             "baseClass": "UserComponent",
             "gameObjectType": "Phaser.GameObjects.Image",
             "properties": []
+        },
+        {
+            "name": "ToggleButton",
+            "baseClass": "UserComponent",
+            "gameObjectType": "Phaser.GameObjects.Image",
+            "properties": []
         }
     ],
     "meta": {

@@ -62,6 +62,16 @@
                 "key": "button_close-sheet0"
             },
             {
+                "url": "assets/images/button_info-sheet0.png",
+                "type": "image",
+                "key": "button_info-sheet0"
+            },
+            {
+                "url": "assets/images/button_language-sheet0.png",
+                "type": "image",
+                "key": "button_language-sheet0"
+            },
+            {
                 "url": "assets/images/button_options-sheet1.png",
                 "type": "image",
                 "key": "button_options-sheet1"
@@ -75,6 +85,16 @@
                 "url": "assets/images/button_present-sheet0.png",
                 "type": "image",
                 "key": "button_present-sheet0"
+            },
+            {
+                "url": "assets/images/button_switch-sheet0.png",
+                "type": "image",
+                "key": "toggleBtnOff"
+            },
+            {
+                "url": "assets/images/button_switch-sheet1.png",
+                "type": "image",
+                "key": "toggleBtnOn"
             },
             {
                 "url": "assets/images/button_winner-sheet0 (1).png",
@@ -257,6 +277,11 @@
                 "key": "GameManager"
             },
             {
+                "url": "src/Prefab/GameSettingPrefab.js",
+                "type": "script",
+                "key": "GameSettingPrefab"
+            },
+            {
                 "url": "assets/images/button_gold_win-sheet0 (2).png",
                 "type": "image",
                 "key": "gold-button"
@@ -425,6 +450,11 @@
                 "url": "src/scripts/SoundManager.js",
                 "type": "script",
                 "key": "SoundManager"
+            },
+            {
+                "url": "src/components/ToggleButton.js",
+                "type": "script",
+                "key": "ToggleButton"
             },
             {
                 "url": "assets/images/window.png",

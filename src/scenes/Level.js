@@ -140,7 +140,11 @@ class Level extends Phaser.Scene {
 		// profilePrefab
 		const profilePrefab = new ProfilePrefab(this, 960, 540);
 		this.add.existing(profilePrefab);
-		profilePrefab.visible = true;
+		profilePrefab.visible = false;
+
+		// gameSettingPrefab
+		const gameSettingPrefab = new GameSettingPrefab(this, 134, 16);
+		this.add.existing(gameSettingPrefab);
 
 		// setting_button (components)
 		new OnHoverComponent(setting_button);
@@ -166,6 +170,7 @@ class Level extends Phaser.Scene {
 		this.share__1_ = share__1_;
 		this.curtenPrefab = curtenPrefab;
 		this.profilePrefab = profilePrefab;
+		this.gameSettingPrefab = gameSettingPrefab;
 
 		this.events.emit("scene-awake");
 	}
@@ -206,6 +211,8 @@ class Level extends Phaser.Scene {
 	curtenPrefab;
 	/** @type {ProfilePrefab} */
 	profilePrefab;
+	/** @type {GameSettingPrefab} */
+	gameSettingPrefab;
 
 	/* START-USER-CODE */
 
@@ -218,6 +225,7 @@ class Level extends Phaser.Scene {
 		this.newGameFun(this.newGameImg);
 		this.shareFun(this.shareImg);
 		this.goldIconHover();
+		this.onProfileButton()
 	}
 
 
@@ -317,6 +325,19 @@ class Level extends Phaser.Scene {
 			duration: 200, 
 			ease: 'Linear', 
 		});
+	}
+
+	onProfileButton(){
+		this.profile_button.setInteractive();
+		this.profile_button.on("pointerdown",()=>{
+			console.log("funtction created")
+			this.profilePrefab.visible = true;
+		})
+
+		this.profilePrefab.button_close.setInteractive();
+		this.profilePrefab.button_close.on("pointerdown", () =>{
+			this.profilePrefab.visible = false;
+		})
 	}
 
 

@@ -93,11 +93,11 @@ class ProfilePrefab extends Phaser.GameObjects.Container {
 		playerNameText_2.setStyle({ "color": "#f9d600ff", "fontFamily": "New Times Roman", "fontSize": "25px" });
 		this.add(playerNameText_2);
 
-		// button_close_sheet0
-		const button_close_sheet0 = scene.add.image(420, -132, "button_close-sheet0");
-		button_close_sheet0.scaleX = 1.2;
-		button_close_sheet0.scaleY = 1.2;
-		this.add(button_close_sheet0);
+		// button_close
+		const button_close = scene.add.image(420, -132, "button_close-sheet0");
+		button_close.scaleX = 1.2;
+		button_close.scaleY = 1.2;
+		this.add(button_close);
 
 		// button_winner_sheet0__1___1_ (components)
 		new OnHoverComponent(button_winner_sheet0__1___1_);
@@ -105,14 +105,19 @@ class ProfilePrefab extends Phaser.GameObjects.Container {
 		// button_winner_sheet0__1___2_ (components)
 		new OnHoverComponent(button_winner_sheet0__1___2_);
 
-		// button_close_sheet0 (components)
-		new PushOnClick(button_close_sheet0);
-		new OnHoverComponent(button_close_sheet0);
+		// button_close (components)
+		new PushOnClick(button_close);
+		new OnHoverComponent(button_close);
+
+		this.button_close = button_close;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
 		/* END-USER-CTR-CODE */
 	}
+
+	/** @type {Phaser.GameObjects.Image} */
+	button_close;
 
 	/* START-USER-CODE */
 
