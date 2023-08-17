@@ -359,13 +359,15 @@
             "id": "40ea5f96-9b19-44a3-9ed0-2b61be3a5a7a",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "visible"
             ],
             "label": "gameSettingPrefab",
             "scope": "CLASS",
             "components": [],
             "x": 134,
             "y": 16,
+            "visible": false,
             "nestedPrefabs": []
         }
     ],

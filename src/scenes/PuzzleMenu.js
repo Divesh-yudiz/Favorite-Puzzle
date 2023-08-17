@@ -211,6 +211,10 @@ class PuzzleMenu extends Phaser.Scene {
 		coins.text = "55";
 		coins.setStyle({ "color": "#ffe22dff", "fontFamily": "Mew Times Roman", "fontSize": "40px" });
 
+		// selectPuzzle
+		const selectPuzzle = new SelectPuzzle(this, 960, 540);
+		this.add.existing(selectPuzzle);
+
 		// daily (components)
 		new OnHoverComponent(daily);
 
@@ -240,6 +244,7 @@ class PuzzleMenu extends Phaser.Scene {
 		this.createIcon = createIcon;
 		this.storeBtn = storeBtn;
 		this.coins = coins;
+		this.selectPuzzle = selectPuzzle;
 
 		this.events.emit("scene-awake");
 	}
@@ -266,6 +271,8 @@ class PuzzleMenu extends Phaser.Scene {
 	storeBtn;
 	/** @type {Phaser.GameObjects.Text} */
 	coins;
+	/** @type {SelectPuzzle} */
+	selectPuzzle;
 
 	/* START-USER-CODE */
 

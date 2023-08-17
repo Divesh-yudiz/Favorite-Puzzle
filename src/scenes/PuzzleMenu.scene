@@ -491,6 +491,20 @@
             "fontFamily": "Mew Times Roman",
             "fontSize": "40px",
             "color": "#ffe22dff"
+        },
+        {
+            "prefabId": "76b671ad-79fd-49e9-9255-1a5498040aef",
+            "id": "0f61c832-ffa8-45f2-bbb9-dd356fe599bf",
+            "unlock": [
+                "x",
+                "y"
+            ],
+            "label": "selectPuzzle",
+            "scope": "CLASS",
+            "components": [],
+            "x": 960,
+            "y": 540,
+            "nestedPrefabs": []
         }
     ],
     "plainObjects": [],

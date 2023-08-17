@@ -145,6 +145,7 @@ class Level extends Phaser.Scene {
 		// gameSettingPrefab
 		const gameSettingPrefab = new GameSettingPrefab(this, 134, 16);
 		this.add.existing(gameSettingPrefab);
+		gameSettingPrefab.visible = false;
 
 		// setting_button (components)
 		new OnHoverComponent(setting_button);
@@ -225,45 +226,46 @@ class Level extends Phaser.Scene {
 		this.newGameFun(this.newGameImg);
 		this.shareFun(this.shareImg);
 		this.goldIconHover();
-		this.onProfileButton()
+		this.onProfileButton();
+		this.profilePrefab.onHover();
 	}
 
 
 	loadGameFun(image) {
-		this.loadGamebtnContainer.setSize(371,115);
+		this.loadGamebtnContainer.setSize(371, 115);
 		this.loadGamebtnContainer.setInteractive();
 		this.loadGamebtnContainer.on('pointerover', (pointer) => {
 			console.log('Mouse over Load Game');
-			this.incImage(image,1.2,1.2);
-			this.loadGameBtnDark.visible=false;
+			this.incImage(image, 1.2, 1.2);
+			this.loadGameBtnDark.visible = false;
 		});
 
 		this.loadGamebtnContainer.on('pointerout', (pointer) => {
 			console.log('Mouse left Load Game');
-			this.decImage(image,1,1);
-			this.loadGameBtnDark.visible=true
+			this.decImage(image, 1, 1);
+			this.loadGameBtnDark.visible = true
 		});
 	}
 
 	newGameFun(image) {
-		this.newBtnContainer.setSize(350,100)
+		this.newBtnContainer.setSize(350, 100)
 		this.newBtnContainer.setInteractive();
 		this.newBtnContainer.on('pointerover', (pointer) => {
 			console.log('Mouse over New Game');
-			this.incImage(image,1.5,1.5);
-			this.gold_button_black.visible=false;
+			this.incImage(image, 1.5, 1.5);
+			this.gold_button_black.visible = false;
 		});
 
 		this.newBtnContainer.on('pointerout', (pointer) => {
 			console.log('Mouse left New Game');
-			this.decImage(image,1.3,1.3);
-			this.gold_button_black.visible=true;
+			this.decImage(image, 1.3, 1.3);
+			this.gold_button_black.visible = true;
 		});
 
-		this.newBtnContainer.on('pointerdown',()=>{
+		this.newBtnContainer.on('pointerdown', () => {
 			console.log("onlick event")
 			this.curtenPrefab.doorClosing();
-			setTimeout(() =>{
+			setTimeout(() => {
 				this.scene.stop("Level");
 				console.log("Way to puzzle menu")
 				this.scene.start("PuzzleMenu");
@@ -272,71 +274,77 @@ class Level extends Phaser.Scene {
 	}
 
 	shareFun(image) {
-		this.shareBtnContainer.setSize(371,115)
+		this.shareBtnContainer.setSize(371, 115)
 		this.shareBtnContainer.setInteractive();
 		this.shareBtnContainer.on('pointerover', (pointer) => {
 			console.log('Mouse over Share');
-			this.incImage(image,1.2,1.2);
-			this.shareBtn.visible=false
+			this.incImage(image, 1.2, 1.2);
+			this.shareBtn.visible = false
 		});
 
 		this.shareBtnContainer.on('pointerout', (pointer) => {
 			console.log('Mouse left share');
-			this.decImage(image,1,1);
-			this.shareBtn.visible=true
+			this.decImage(image, 1, 1);
+			this.shareBtn.visible = true
 		});
 	}
 
-	goldIconHover(){
+	goldIconHover() {
 		this.profile_button.setInteractive();
 		this.profile_button.on('pointerover', (pointer) => {
-			this.profile_button.alpha=0.5
+			this.profile_button.alpha = 0.5
 		});
 
 		this.profile_button.on('pointerout', (pointer) => {
-			this.profile_button.alpha=1
+			this.profile_button.alpha = 1
 		});
 
 		this.setting_button.setInteractive();
 		this.setting_button.on('pointerover', (pointer) => {
-			this.setting_button.alpha=0.5
+			this.setting_button.alpha = 0.5
 		});
 
 		this.setting_button.on('pointerout', (pointer) => {
-			this.setting_button.alpha=1
+			this.setting_button.alpha = 1
 		});
 	}
 
-	incImage(image,x,y) {
-		this.tweens.add({
-			targets: image,
-			scaleX: x, 
-			scaleY: y, 
-			duration: 200, 
-			ease: 'Linear', 
-		});
-	}
-
-	decImage(image,x,y) {
+	incImage(image, x, y) {
 		this.tweens.add({
 			targets: image,
 			scaleX: x,
 			scaleY: y,
-			duration: 200, 
-			ease: 'Linear', 
+			duration: 200,
+			ease: 'Linear',
 		});
 	}
 
-	onProfileButton(){
-		this.profile_button.setInteractive();
-		this.profile_button.on("pointerdown",()=>{
+	decImage(image, x, y) {
+		this.tweens.add({
+			targets: image,
+			scaleX: x,
+			scaleY: y,
+			duration: 200,
+			ease: 'Linear',
+		});
+	}
+
+	onProfileButton() {
+		this.profile_button.setInteractive().on("pointerdown", () => {
 			console.log("funtction created")
 			this.profilePrefab.visible = true;
 		})
 
-		this.profilePrefab.button_close.setInteractive();
-		this.profilePrefab.button_close.on("pointerdown", () =>{
+		this.profilePrefab.button_close.setInteractive().on("pointerdown", () => {
 			this.profilePrefab.visible = false;
+		})
+
+		this.setting_button.setInteractive().on('pointerdown', () => {
+			this.gameSettingPrefab.visible = true;
+		})
+
+		this.gameSettingPrefab.button_back.setInteractive().on('pointerdown', () => {
+			this.gameSettingPrefab.visible = false;
 		})
 	}
 

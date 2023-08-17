@@ -21,17 +21,17 @@ class ProfilePrefab extends Phaser.GameObjects.Container {
 		panel_h.scaleY = 5;
 		this.add(panel_h);
 
-		// pngwing_com__4_
-		const pngwing_com__4_ = scene.add.image(42, 5, "pngwing.com (4)");
-		pngwing_com__4_.scaleX = 0.29;
-		pngwing_com__4_.scaleY = 0.3;
-		this.add(pngwing_com__4_);
-
 		// pngfind_com_gold_frame_png_578767
 		const pngfind_com_gold_frame_png_578767 = scene.add.image(41, 3, "pngfind.com-gold-frame-png-578767");
 		pngfind_com_gold_frame_png_578767.scaleX = 0.1;
 		pngfind_com_gold_frame_png_578767.scaleY = 0.1;
 		this.add(pngfind_com_gold_frame_png_578767);
+
+		// playerAvatar
+		const playerAvatar = scene.add.image(42, 5, "pngwing.com (4)");
+		playerAvatar.scaleX = 0.29;
+		playerAvatar.scaleY = 0.3;
+		this.add(playerAvatar);
 
 		// playerNameText
 		const playerNameText = scene.add.text(-51, 97, "", {});
@@ -108,7 +108,9 @@ class ProfilePrefab extends Phaser.GameObjects.Container {
 		// button_close (components)
 		new PushOnClick(button_close);
 		new OnHoverComponent(button_close);
+		new CurserToPointer(button_close);
 
+		this.playerAvatar = playerAvatar;
 		this.button_close = button_close;
 
 		/* START-USER-CTR-CODE */
@@ -117,15 +119,40 @@ class ProfilePrefab extends Phaser.GameObjects.Container {
 	}
 
 	/** @type {Phaser.GameObjects.Image} */
+	playerAvatar;
+	/** @type {Phaser.GameObjects.Image} */
 	button_close;
 
 	/* START-USER-CODE */
 
 	// Write your code here.
-
+	onHover() {
+		this.playerAvatar.setInteractive().on('pointerover', () => {
+			this.scene.add.tween({
+				targets: this.playerAvatar,
+				scaleX: 0.5,
+				scaleY: 0.5,
+				duration: 200,
+				ease: "easeInOutBack"
+			})
+		})
+		this.playerAvatar.on('pointerout', () => {
+			console.log("heloo im in prefab")
+			this.scene.add.tween({
+				targets: this.playerAvatar,
+				scaleX: 0.29,
+				scaleY: 0.3,
+				duration: 200,
+				ease: "easeInOutBack"
+			})
+		})
+	}
 	/* END-USER-CODE */
 }
 
 /* END OF COMPILED CODE */
 
 // You can write more code here
+
+// this.obj1 =new ProfilePrefab();
+// this.obj1.onHover();
