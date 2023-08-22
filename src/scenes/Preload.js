@@ -22,27 +22,30 @@ class Preload extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// progress
-		const progress = this.add.text(960, 540, "", {});
-		progress.setOrigin(0.5, 0.5);
-		progress.text = "0%";
-		progress.setStyle({ "fontSize": "54px" });
+		// loading
+		const loading = this.add.sprite(964, 477, "loading_win-sheet0", 0);
+		loading.scaleX = 3;
+		loading.scaleY = 3;
 
-		// progress (components)
-		new PreloadText(progress);
+		this.loading = loading;
 
 		this.events.emit("scene-awake");
 	}
+
+	/** @type {Phaser.GameObjects.Sprite} */
+	loading;
 
 	/* START-USER-CODE */
 
 	// Write your code here
 
 	preload() {
-
 		this.editorCreate();
 
 		this.editorPreload();
+
+		this.loading.anims.play("loadingAnimation",true) 
+		// this.loading.anims.play("loadingAnimation")
 
 		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Level"));
 	}

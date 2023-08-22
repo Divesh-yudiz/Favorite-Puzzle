@@ -1,6 +1,38 @@
 {
     "section1": {
-        "files": []
+        "files": [
+            {
+                "url": "assets/animations/loadAnimations.json",
+                "type": "animation",
+                "key": "loadAnimations"
+            },
+            {
+                "url": "assets/images/loading_win-sheet0.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "loading_win-sheet0"
+            },
+            {
+                "url": "assets/images/loading_win-sheet1.png",
+                "frameConfig": {
+                    "frameWidth": 32,
+                    "frameHeight": 32,
+                    "startFrame": 0,
+                    "endFrame": -1,
+                    "spacing": 0,
+                    "margin": 0
+                },
+                "type": "spritesheet",
+                "key": "loading_win-sheet1"
+            }
+        ]
     },
     "meta": {
         "app": "Phaser Editor 2D - Asset Pack Editor",

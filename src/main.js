@@ -22,9 +22,13 @@ const init = () => {
 			audio: {
 				disableWebAudio: false,
 			},
-			dom: {
-				createContainer: true,
-			},
+			physics: {
+				default: 'arcade',
+				arcade: {
+					gravity: { y: 0 },
+					debug: false
+				}
+			}
 		});
 	} else {
 		var game = new Phaser.Game({
@@ -40,9 +44,13 @@ const init = () => {
 			audio: {
 				disableWebAudio: false,
 			},
-			dom: {
-				createContainer: true,
-			},
+			physics: {
+				default: 'arcade',
+				arcade: {
+					gravity: { y: 0 },
+					debug: false
+				}
+			}
 		});
 	}
 	game.scene.add("Preload", Preload);

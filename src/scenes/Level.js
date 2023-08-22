@@ -235,13 +235,13 @@ class Level extends Phaser.Scene {
 		this.loadGamebtnContainer.setSize(371, 115);
 		this.loadGamebtnContainer.setInteractive();
 		this.loadGamebtnContainer.on('pointerover', (pointer) => {
-			console.log('Mouse over Load Game');
+
 			this.incImage(image, 1.2, 1.2);
 			this.loadGameBtnDark.visible = false;
 		});
 
 		this.loadGamebtnContainer.on('pointerout', (pointer) => {
-			console.log('Mouse left Load Game');
+
 			this.decImage(image, 1, 1);
 			this.loadGameBtnDark.visible = true
 		});
@@ -251,23 +251,20 @@ class Level extends Phaser.Scene {
 		this.newBtnContainer.setSize(350, 100)
 		this.newBtnContainer.setInteractive();
 		this.newBtnContainer.on('pointerover', (pointer) => {
-			console.log('Mouse over New Game');
 			this.incImage(image, 1.5, 1.5);
 			this.gold_button_black.visible = false;
 		});
 
 		this.newBtnContainer.on('pointerout', (pointer) => {
-			console.log('Mouse left New Game');
 			this.decImage(image, 1.3, 1.3);
 			this.gold_button_black.visible = true;
 		});
 
 		this.newBtnContainer.on('pointerdown', () => {
-			console.log("onlick event")
 			this.curtenPrefab.doorClosing();
 			setTimeout(() => {
 				this.scene.stop("Level");
-				console.log("Way to puzzle menu")
+
 				this.scene.start("PuzzleMenu");
 			}, 1000);
 		})
@@ -277,13 +274,11 @@ class Level extends Phaser.Scene {
 		this.shareBtnContainer.setSize(371, 115)
 		this.shareBtnContainer.setInteractive();
 		this.shareBtnContainer.on('pointerover', (pointer) => {
-			console.log('Mouse over Share');
 			this.incImage(image, 1.2, 1.2);
 			this.shareBtn.visible = false
 		});
 
 		this.shareBtnContainer.on('pointerout', (pointer) => {
-			console.log('Mouse left share');
 			this.decImage(image, 1, 1);
 			this.shareBtn.visible = true
 		});
@@ -331,7 +326,7 @@ class Level extends Phaser.Scene {
 
 	onProfileButton() {
 		this.profile_button.setInteractive().on("pointerdown", () => {
-			console.log("funtction created")
+
 			this.profilePrefab.visible = true;
 		})
 

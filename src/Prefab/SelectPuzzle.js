@@ -131,6 +131,12 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 		button_gold_win_sheet.scaleX = 1.5;
 		startGameBtnContainer.add(button_gold_win_sheet);
 
+		// startGame
+		const startGame = scene.add.text(131, 174, "", {});
+		startGame.text = "New Game";
+		startGame.setStyle({ "color": "#100d0dff", "fontFamily": "New Times Roman", "fontSize": "30px" });
+		startGameBtnContainer.add(startGame);
+
 		// button_gold_win_sheet_1
 		const button_gold_win_sheet_1 = scene.add.image(-159, 191, "button_gold_win-sheet1");
 		button_gold_win_sheet_1.scaleX = 1.5;
@@ -156,8 +162,8 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 
 		// puzzleImage
 		const puzzleImage = scene.add.image(-183, -11, "9");
-		puzzleImage.scaleX = 0.28;
-		puzzleImage.scaleY = 0.245;
+		puzzleImage.scaleX = 0.225;
+		puzzleImage.scaleY = 0.19;
 		this.add(puzzleImage);
 
 		// puzzlespreview_sheet0
@@ -273,6 +279,8 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 		this.soundBtnOn = soundBtnOn;
 		this.musicButtonContainer_1 = musicButtonContainer_1;
 		this.startGameBtnContainer = startGameBtnContainer;
+		this.button_gold_win_sheet = button_gold_win_sheet;
+		this.puzzleImage = puzzleImage;
 
 		/* START-USER-CTR-CODE */
 		// Write your code here.
@@ -291,6 +299,10 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 	musicButtonContainer_1;
 	/** @type {Phaser.GameObjects.Container} */
 	startGameBtnContainer;
+	/** @type {Phaser.GameObjects.Image} */
+	button_gold_win_sheet;
+	/** @type {Phaser.GameObjects.Image} */
+	puzzleImage;
 
 	/* START-USER-CODE */
 

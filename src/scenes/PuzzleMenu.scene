@@ -147,84 +147,6 @@
                 },
                 {
                     "type": "Image",
-                    "id": "a4514b4c-6da6-4758-8f51-a063c64b2978",
-                    "label": "flower",
-                    "components": [],
-                    "texture": {
-                        "key": "2"
-                    },
-                    "x": -1542,
-                    "y": -34,
-                    "scaleX": 0.26,
-                    "scaleY": 0.29
-                },
-                {
-                    "type": "Image",
-                    "id": "96d6dc63-a50a-4093-8ab1-a247a860a329",
-                    "label": "butterfly",
-                    "components": [],
-                    "texture": {
-                        "key": "3"
-                    },
-                    "x": -1142,
-                    "y": -34,
-                    "scaleX": 0.26,
-                    "scaleY": 0.44
-                },
-                {
-                    "type": "Image",
-                    "id": "28930d31-2b27-4a0e-be6f-1ae8a912afb1",
-                    "label": "icecream",
-                    "components": [],
-                    "texture": {
-                        "key": "5"
-                    },
-                    "x": -743,
-                    "y": -34,
-                    "scaleX": 0.42,
-                    "scaleY": 0.36
-                },
-                {
-                    "type": "Image",
-                    "id": "69b3f554-40cf-479f-9a4d-a0ca2eeb2f52",
-                    "label": "turtle",
-                    "components": [],
-                    "texture": {
-                        "key": "6"
-                    },
-                    "x": -1542,
-                    "y": 367,
-                    "scaleX": 0.26,
-                    "scaleY": 0.51
-                },
-                {
-                    "type": "Image",
-                    "id": "93fa6c6a-60e1-4ff9-aa3c-8ad379df6734",
-                    "label": "lily",
-                    "components": [],
-                    "texture": {
-                        "key": "7"
-                    },
-                    "x": -1143,
-                    "y": 366,
-                    "scaleX": 0.39,
-                    "scaleY": 0.29
-                },
-                {
-                    "type": "Image",
-                    "id": "d021d582-c0f3-4732-88b5-85eef3ec0af8",
-                    "label": "cat",
-                    "components": [],
-                    "texture": {
-                        "key": "9"
-                    },
-                    "x": -743,
-                    "y": 366,
-                    "scaleX": 0.32,
-                    "scaleY": 0.36
-                },
-                {
-                    "type": "Image",
                     "id": "ac2a068b-b41b-4ea4-98cf-a985c2db72a3",
                     "label": "preview_box",
                     "components": [],
@@ -297,6 +219,84 @@
                     "x": -1540,
                     "scaleX": 1.7,
                     "scaleY": 1.9
+                },
+                {
+                    "type": "Image",
+                    "id": "219adea5-013d-49a5-acf9-cd2c239af681",
+                    "label": "flower",
+                    "components": [],
+                    "texture": {
+                        "key": "flower"
+                    },
+                    "x": -1542,
+                    "y": -34,
+                    "scaleX": 0.25,
+                    "scaleY": 0.28
+                },
+                {
+                    "type": "Image",
+                    "id": "3debb709-6ab9-4bf3-bcbe-c21c64dca059",
+                    "label": "butterfly",
+                    "components": [],
+                    "texture": {
+                        "key": "butterfly"
+                    },
+                    "x": -1143,
+                    "y": -35,
+                    "scaleX": 0.25,
+                    "scaleY": 0.43
+                },
+                {
+                    "type": "Image",
+                    "id": "35bff700-be21-4541-89d0-43145d796560",
+                    "label": "ice_cream",
+                    "components": [],
+                    "texture": {
+                        "key": "ice-cream"
+                    },
+                    "x": -739,
+                    "y": -32,
+                    "scaleX": 0.4,
+                    "scaleY": 0.35
+                },
+                {
+                    "type": "Image",
+                    "id": "ac695fb1-3114-48f3-9242-a68b0442cccd",
+                    "label": "tulips",
+                    "components": [],
+                    "texture": {
+                        "key": "tulips"
+                    },
+                    "x": -1542,
+                    "y": 367,
+                    "scaleX": 0.37,
+                    "scaleY": 0.28
+                },
+                {
+                    "type": "Image",
+                    "id": "add344de-ea58-40ba-89bc-7c9cc431037a",
+                    "label": "turtle",
+                    "components": [],
+                    "texture": {
+                        "key": "turtle"
+                    },
+                    "x": -1143,
+                    "y": 369,
+                    "scaleX": 0.26,
+                    "scaleY": 0.5
+                },
+                {
+                    "type": "Image",
+                    "id": "80aa00b1-aa7b-490c-8eea-a6bad4e19730",
+                    "label": "cat",
+                    "components": [],
+                    "texture": {
+                        "key": "cat"
+                    },
+                    "x": -745,
+                    "y": 369,
+                    "scaleX": 0.32,
+                    "scaleY": 0.35
                 }
             ]
         },
@@ -497,13 +497,15 @@
             "id": "0f61c832-ffa8-45f2-bbb9-dd356fe599bf",
             "unlock": [
                 "x",
-                "y"
+                "y",
+                "visible"
             ],
             "label": "selectPuzzle",
             "scope": "CLASS",
             "components": [],
             "x": 960,
             "y": 540,
+            "visible": false,
             "nestedPrefabs": []
         }
     ],

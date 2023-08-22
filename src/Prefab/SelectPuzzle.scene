@@ -302,6 +302,7 @@
                             "type": "Image",
                             "id": "7b0f744c-d392-4aca-b1a8-004f2e33a922",
                             "label": "button_gold_win_sheet",
+                            "scope": "CLASS",
                             "components": [],
                             "texture": {
                                 "key": "button_gold_win-sheet1"
@@ -309,6 +310,18 @@
                             "x": 198,
                             "y": 191,
                             "scaleX": 1.5
+                        },
+                        {
+                            "type": "Text",
+                            "id": "fb56ddf6-eacf-4563-b890-8c25b2946bb0",
+                            "label": "startGame",
+                            "components": [],
+                            "x": 131,
+                            "y": 174,
+                            "text": "New Game",
+                            "fontFamily": "New Times Roman",
+                            "fontSize": "30px",
+                            "color": "#100d0dff"
                         }
                     ]
                 },
@@ -367,14 +380,15 @@
                     "type": "Image",
                     "id": "7e1bd73a-01d6-42ae-abe7-de45649cd89a",
                     "label": "puzzleImage",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "9"
                     },
                     "x": -183,
                     "y": -11,
-                    "scaleX": 0.28,
-                    "scaleY": 0.245
+                    "scaleX": 0.225,
+                    "scaleY": 0.19
                 },
                 {
                     "type": "Image",

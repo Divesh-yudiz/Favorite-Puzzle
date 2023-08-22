@@ -74,42 +74,6 @@ class PuzzleMenu extends Phaser.Scene {
 		preview_box_11.scaleY = 1.9;
 		tweenContainer1.add(preview_box_11);
 
-		// flower
-		const flower = this.add.image(-1542, -34, "2");
-		flower.scaleX = 0.26;
-		flower.scaleY = 0.29;
-		tweenContainer1.add(flower);
-
-		// butterfly
-		const butterfly = this.add.image(-1142, -34, "3");
-		butterfly.scaleX = 0.26;
-		butterfly.scaleY = 0.44;
-		tweenContainer1.add(butterfly);
-
-		// icecream
-		const icecream = this.add.image(-743, -34, "5");
-		icecream.scaleX = 0.42;
-		icecream.scaleY = 0.36;
-		tweenContainer1.add(icecream);
-
-		// turtle
-		const turtle = this.add.image(-1542, 367, "6");
-		turtle.scaleX = 0.26;
-		turtle.scaleY = 0.51;
-		tweenContainer1.add(turtle);
-
-		// lily
-		const lily = this.add.image(-1143, 366, "7");
-		lily.scaleX = 0.39;
-		lily.scaleY = 0.29;
-		tweenContainer1.add(lily);
-
-		// cat
-		const cat = this.add.image(-743, 366, "9");
-		cat.scaleX = 0.32;
-		cat.scaleY = 0.36;
-		tweenContainer1.add(cat);
-
 		// preview_box
 		const preview_box = this.add.image(-1540, 400, "preview_box");
 		preview_box.scaleX = 1.7;
@@ -145,6 +109,42 @@ class PuzzleMenu extends Phaser.Scene {
 		preview_box_5.scaleX = 1.7;
 		preview_box_5.scaleY = 1.9;
 		tweenContainer1.add(preview_box_5);
+
+		// flower
+		const flower = this.add.image(-1542, -34, "flower");
+		flower.scaleX = 0.25;
+		flower.scaleY = 0.28;
+		tweenContainer1.add(flower);
+
+		// butterfly
+		const butterfly = this.add.image(-1143, -35, "butterfly");
+		butterfly.scaleX = 0.25;
+		butterfly.scaleY = 0.43;
+		tweenContainer1.add(butterfly);
+
+		// ice_cream
+		const ice_cream = this.add.image(-739, -32, "ice-cream");
+		ice_cream.scaleX = 0.4;
+		ice_cream.scaleY = 0.35;
+		tweenContainer1.add(ice_cream);
+
+		// tulips
+		const tulips = this.add.image(-1542, 367, "tulips");
+		tulips.scaleX = 0.37;
+		tulips.scaleY = 0.28;
+		tweenContainer1.add(tulips);
+
+		// turtle
+		const turtle = this.add.image(-1143, 369, "turtle");
+		turtle.scaleX = 0.26;
+		turtle.scaleY = 0.5;
+		tweenContainer1.add(turtle);
+
+		// cat
+		const cat = this.add.image(-745, 369, "cat");
+		cat.scaleX = 0.32;
+		cat.scaleY = 0.35;
+		tweenContainer1.add(cat);
 
 		// CurtenPrefab
 		const curtenPrefab = new CurtenPrefab(this, 960, 540);
@@ -214,6 +214,7 @@ class PuzzleMenu extends Phaser.Scene {
 		// selectPuzzle
 		const selectPuzzle = new SelectPuzzle(this, 960, 540);
 		this.add.existing(selectPuzzle);
+		selectPuzzle.visible = false;
 
 		// daily (components)
 		new OnHoverComponent(daily);
@@ -280,8 +281,10 @@ class PuzzleMenu extends Phaser.Scene {
 
 	create() {
 
-		// console.log("im in the puzzle menu")
+		// c.setinteractiveOnPuzzleImages
 		this.editorCreate();
+		// this.setinteractiveOnPuzzleImages();
+		this.funcToAddEvents();
 
 		this.createIcon.setInteractive().on('pointerdown', this.openFilePicker, this);
 
@@ -294,7 +297,6 @@ class PuzzleMenu extends Phaser.Scene {
 		this.rightButton.setInteractive().on("pointerdown", () => {
 			if (this.rightButton.alpha === 1) {
 				this.pageCount++;
-				console.log("pagecount", this.pageCount);
 				this.tweens.add({
 					targets: this.tweenContainer1,
 					x: this.tweenContainer1.x - 1540,
@@ -314,7 +316,6 @@ class PuzzleMenu extends Phaser.Scene {
 		this.leftButton.setInteractive().on("pointerdown", () => {
 			if (this.leftButton.alpha === 1) {
 				this.pageCount--;
-				console.log("pagecount", this.pageCount);
 				this.tweens.add({
 					targets: this.tweenContainer1,
 					x: this.tweenContainer1.x + 1540,
@@ -370,6 +371,33 @@ class PuzzleMenu extends Phaser.Scene {
 
 		// Trigger a click event on the file input to open the file picker
 		fileInput.click();
+	}
+
+	funcToAddEvents(){
+		this.tweenContainer1.each(function(child) {
+			// Check if the key of the image matches one of the specified keys
+			if (["cat", "turtle", "tulips", "ice-cream", "butterfly", "flower"].includes(child.texture.key)) {
+				child.setInteractive().on('pointerdown',()=>{
+					this.selectPuzzle.visible=true;
+					this.selectPuzzle.puzzleImage.setTexture(child.texture.key)
+
+				})
+			}
+		}, this);
+
+		this.selectPuzzle.button_close.setInteractive().on('pointerdown',()=>{
+			this.selectPuzzle.visible=false;
+		})
+
+		
+		this.selectPuzzle.button_gold_win_sheet.setInteractive().on('pointerdown',()=>{
+			this.selectPuzzle.visible=false;
+			this.curtenPrefab.doorClosing();
+			setTimeout(()=>{
+				this.scene.stop("PuzzleMenu");
+				this.scene.start("GamePlayScene");
+			},1500)
+		})
 	}
 
 	/* END-USER-CODE */

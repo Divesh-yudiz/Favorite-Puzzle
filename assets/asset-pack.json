@@ -4,32 +4,32 @@
             {
                 "url": "assets/images/2.jpg",
                 "type": "image",
-                "key": "2"
+                "key": "flower"
             },
             {
                 "url": "assets/images/3.jpg",
                 "type": "image",
-                "key": "3"
+                "key": "butterfly"
             },
             {
                 "url": "assets/images/5.jpg",
                 "type": "image",
-                "key": "5"
+                "key": "ice-cream"
             },
             {
                 "url": "assets/images/6.jpg",
                 "type": "image",
-                "key": "6"
+                "key": "turtle"
             },
             {
                 "url": "assets/images/7.jpg",
                 "type": "image",
-                "key": "7"
+                "key": "tulips"
             },
             {
                 "url": "assets/images/9.jpg",
                 "type": "image",
-                "key": "9"
+                "key": "cat"
             },
             {
                 "url": "assets/images/bg-image.png",
@@ -114,21 +114,6 @@
             {
                 "url": "assets/images/Cat/cat_part1.png",
                 "type": "image",
-                "key": "cat_part"
-            },
-            {
-                "url": "assets/images/Cat/cat_part2.png",
-                "type": "image",
-                "key": "cat_part_1"
-            },
-            {
-                "url": "assets/images/Cat/cat_part3.png",
-                "type": "image",
-                "key": "cat_part_2"
-            },
-            {
-                "url": "assets/images/cat_part1.png",
-                "type": "image",
                 "key": "cat_part1"
             },
             {
@@ -167,12 +152,12 @@
                 "key": "cat_part16"
             },
             {
-                "url": "assets/images/cat_part2.png",
+                "url": "assets/images/Cat/cat_part2.png",
                 "type": "image",
                 "key": "cat_part2"
             },
             {
-                "url": "assets/images/cat_part3.png",
+                "url": "assets/images/Cat/cat_part3.png",
                 "type": "image",
                 "key": "cat_part3"
             },
@@ -275,6 +260,11 @@
                 "url": "src/scripts/GameManager.js",
                 "type": "script",
                 "key": "GameManager"
+            },
+            {
+                "url": "src/scenes/GamePlayScene .js",
+                "type": "script",
+                "key": "GamePlayScene "
             },
             {
                 "url": "src/Prefab/GameSettingPrefab.js",
@@ -480,6 +470,11 @@
                 "url": "src/scripts/SoundManager.js",
                 "type": "script",
                 "key": "SoundManager"
+            },
+            {
+                "url": "assets/images/squareBorder.png",
+                "type": "image",
+                "key": "squareBorder"
             },
             {
                 "url": "assets/images/button_switch-sheet0.png",

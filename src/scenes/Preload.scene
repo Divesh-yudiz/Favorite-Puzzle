@@ -13,18 +13,19 @@
     },
     "displayList": [
         {
-            "type": "Text",
-            "id": "2ce42443-5227-4c9b-b498-e81f9a21cde3",
-            "label": "progress",
-            "components": [
-                "PreloadText"
-            ],
-            "x": 960,
-            "y": 540,
-            "originX": 0.5,
-            "originY": 0.5,
-            "text": "0%",
-            "fontSize": "54px"
+            "type": "Sprite",
+            "id": "256f96b3-5614-4911-afd2-829c7ae416e8",
+            "label": "loading",
+            "scope": "CLASS",
+            "components": [],
+            "texture": {
+                "key": "loading_win-sheet0",
+                "frame": 0
+            },
+            "x": 964,
+            "y": 477,
+            "scaleX": 3,
+            "scaleY": 3
         }
     ],
     "plainObjects": [],
