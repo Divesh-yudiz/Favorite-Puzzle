@@ -277,7 +277,8 @@
                         {
                             "type": "Image",
                             "id": "e255972b-10aa-4bcc-8d67-e4d0d90d3031",
-                            "label": "gold_button_black",
+                            "label": "gold_button_3",
+                            "scope": "CLASS",
                             "components": [],
                             "texture": {
                                 "key": "gold-button-black"
@@ -288,20 +289,8 @@
                         },
                         {
                             "type": "Image",
-                            "id": "e86f3746-3313-4168-96a7-025c8929765e",
-                            "label": "gold_button",
-                            "components": [],
-                            "texture": {
-                                "key": "gold-button"
-                            },
-                            "x": 201,
-                            "y": 190,
-                            "scaleX": 1.5
-                        },
-                        {
-                            "type": "Image",
                             "id": "7b0f744c-d392-4aca-b1a8-004f2e33a922",
-                            "label": "button_gold_win_sheet",
+                            "label": "button_gold_1",
                             "scope": "CLASS",
                             "components": [],
                             "texture": {
@@ -309,6 +298,21 @@
                             },
                             "x": 198,
                             "y": 191,
+                            "scaleX": 1.5
+                        },
+                        {
+                            "type": "Image",
+                            "id": "e86f3746-3313-4168-96a7-025c8929765e",
+                            "label": "gold_button_2",
+                            "scope": "CLASS",
+                            "components": [
+                                "GlowButton"
+                            ],
+                            "texture": {
+                                "key": "gold-button"
+                            },
+                            "x": 201,
+                            "y": 190,
                             "scaleX": 1.5
                         },
                         {

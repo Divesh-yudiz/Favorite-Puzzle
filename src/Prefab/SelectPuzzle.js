@@ -116,20 +116,20 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 		const startGameBtnContainer = scene.add.container(0, 0);
 		this.add(startGameBtnContainer);
 
-		// gold_button_black
-		const gold_button_black = scene.add.image(200, 188, "gold-button-black");
-		gold_button_black.scaleX = 1.5;
-		startGameBtnContainer.add(gold_button_black);
+		// gold_button_3
+		const gold_button_3 = scene.add.image(200, 188, "gold-button-black");
+		gold_button_3.scaleX = 1.5;
+		startGameBtnContainer.add(gold_button_3);
 
-		// gold_button
-		const gold_button = scene.add.image(201, 190, "gold-button");
-		gold_button.scaleX = 1.5;
-		startGameBtnContainer.add(gold_button);
+		// button_gold_1
+		const button_gold_1 = scene.add.image(198, 191, "button_gold_win-sheet1");
+		button_gold_1.scaleX = 1.5;
+		startGameBtnContainer.add(button_gold_1);
 
-		// button_gold_win_sheet
-		const button_gold_win_sheet = scene.add.image(198, 191, "button_gold_win-sheet1");
-		button_gold_win_sheet.scaleX = 1.5;
-		startGameBtnContainer.add(button_gold_win_sheet);
+		// gold_button_2
+		const gold_button_2 = scene.add.image(201, 190, "gold-button");
+		gold_button_2.scaleX = 1.5;
+		startGameBtnContainer.add(gold_button_2);
 
 		// startGame
 		const startGame = scene.add.text(131, 174, "", {});
@@ -273,13 +273,18 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 		// toggleBtnOn (components)
 		new ToggleButton(toggleBtnOn);
 
+		// gold_button_2 (components)
+		new GlowButton(gold_button_2);
+
 		this.button_close = button_close;
 		this.musicButtonContainer = musicButtonContainer;
 		this.soundBtnOff = soundBtnOff;
 		this.soundBtnOn = soundBtnOn;
 		this.musicButtonContainer_1 = musicButtonContainer_1;
 		this.startGameBtnContainer = startGameBtnContainer;
-		this.button_gold_win_sheet = button_gold_win_sheet;
+		this.gold_button_3 = gold_button_3;
+		this.button_gold_1 = button_gold_1;
+		this.gold_button_2 = gold_button_2;
 		this.puzzleImage = puzzleImage;
 
 		/* START-USER-CTR-CODE */
@@ -300,7 +305,11 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 	/** @type {Phaser.GameObjects.Container} */
 	startGameBtnContainer;
 	/** @type {Phaser.GameObjects.Image} */
-	button_gold_win_sheet;
+	gold_button_3;
+	/** @type {Phaser.GameObjects.Image} */
+	button_gold_1;
+	/** @type {Phaser.GameObjects.Image} */
+	gold_button_2;
 	/** @type {Phaser.GameObjects.Image} */
 	puzzleImage;
 
@@ -308,6 +317,38 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 
 	// Write your code here.
 
+	currentButton = 1;
+
+	switchButtons(oScene) {
+		this.gold_button_2.setAlpha(0); // Start with the image invisible
+		console.log("Hello im switch Button ")
+		// Create a fade-in tween
+		const fadeInTween = this.scene.tweens.add({
+			targets: this.gold_button_2,
+			alpha: 1, // Fade to fully visible
+			duration: 1000, // 1000 milliseconds (1 second)
+			ease: 'Linear',
+			yoyo: true,
+			repeat: -1 // Repeat indefinitely
+		});
+
+		// Create a fade-out tween
+		const fadeOutTween = this.scene.tweens.add({
+			targets: this.gold_button_2,
+			alpha: 0, // Fade to fully invisible
+			duration: 1000, // 1000 milliseconds (1 second)
+			ease: 'Linear',
+			yoyo: true,
+			repeat: -1, // Repeat indefinitely
+			onComplete:()=>{
+				console.log("im fade out")
+			}
+		});
+
+		// Start both tweens simultaneously
+		fadeInTween.play();
+		fadeOutTween.play();
+	}
 	/* END-USER-CODE */
 }
 

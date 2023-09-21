@@ -286,6 +286,8 @@ class PuzzleMenu extends Phaser.Scene {
 		// this.setinteractiveOnPuzzleImages();
 		this.funcToAddEvents();
 
+		this.addTween = new TweenManager(this);
+
 		this.createIcon.setInteractive().on('pointerdown', this.openFilePicker, this);
 
 		this.curtenPrefab.doorOpening();
@@ -379,8 +381,11 @@ class PuzzleMenu extends Phaser.Scene {
 			if (["cat", "turtle", "tulips", "ice-cream", "butterfly", "flower"].includes(child.texture.key)) {
 				child.setInteractive().on('pointerdown',()=>{
 					this.selectPuzzle.visible=true;
+					this.selectPuzzle.switchButtons(this);
+					// console.log("Select Puzzle Obj",this.selectPuzzle)
+					this.addTween.glowEffect(this.selectPuzzle.gold_button_2)
 					this.selectPuzzle.puzzleImage.setTexture(child.texture.key)
-
+					this.selectPuzzle.puzzleImage.setScale(0.28,0.24)
 				})
 			}
 		}, this);
@@ -390,7 +395,7 @@ class PuzzleMenu extends Phaser.Scene {
 		})
 
 		
-		this.selectPuzzle.button_gold_win_sheet.setInteractive().on('pointerdown',()=>{
+		this.selectPuzzle.button_gold_1.setInteractive().on('pointerdown',()=>{
 			this.selectPuzzle.visible=false;
 			this.curtenPrefab.doorClosing();
 			setTimeout(()=>{
@@ -398,6 +403,9 @@ class PuzzleMenu extends Phaser.Scene {
 				this.scene.start("GamePlayScene");
 			},1500)
 		})
+	}
+
+	update(){
 	}
 
 	/* END-USER-CODE */

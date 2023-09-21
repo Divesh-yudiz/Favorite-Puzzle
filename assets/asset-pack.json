@@ -2,39 +2,14 @@
     "section1": {
         "files": [
             {
-                "url": "assets/images/2.jpg",
+                "url": "assets/images/bg-image.png",
                 "type": "image",
-                "key": "flower"
+                "key": "bg-image"
             },
             {
                 "url": "assets/images/3.jpg",
                 "type": "image",
                 "key": "butterfly"
-            },
-            {
-                "url": "assets/images/5.jpg",
-                "type": "image",
-                "key": "ice-cream"
-            },
-            {
-                "url": "assets/images/6.jpg",
-                "type": "image",
-                "key": "turtle"
-            },
-            {
-                "url": "assets/images/7.jpg",
-                "type": "image",
-                "key": "tulips"
-            },
-            {
-                "url": "assets/images/9.jpg",
-                "type": "image",
-                "key": "cat"
-            },
-            {
-                "url": "assets/images/bg-image.png",
-                "type": "image",
-                "key": "bg-image"
             },
             {
                 "url": "assets/images/button_addcoin-sheet0.png",
@@ -110,6 +85,11 @@
                 "url": "assets/images/buttons_main-sheet0.png",
                 "type": "image",
                 "key": "buttons_main-sheet0"
+            },
+            {
+                "url": "assets/images/9.jpg",
+                "type": "image",
+                "key": "cat"
             },
             {
                 "url": "assets/images/Cat/cat_part1.png",
@@ -252,6 +232,11 @@
                 "key": "floppy-disk (1)"
             },
             {
+                "url": "assets/images/2.jpg",
+                "type": "image",
+                "key": "flower"
+            },
+            {
                 "url": "assets/images/galleryback_0.png",
                 "type": "image",
                 "key": "galleryback_0"
@@ -272,6 +257,11 @@
                 "key": "GameSettingPrefab"
             },
             {
+                "url": "src/components/GlowButton.js",
+                "type": "script",
+                "key": "GlowButton"
+            },
+            {
                 "url": "assets/images/button_gold_win-sheet0 (2).png",
                 "type": "image",
                 "key": "gold-button"
@@ -290,6 +280,11 @@
                 "url": "assets/images/Hint.png",
                 "type": "image",
                 "key": "Hint"
+            },
+            {
+                "url": "assets/images/5.jpg",
+                "type": "image",
+                "key": "ice-cream"
             },
             {
                 "url": "assets/images/icon_malahit-sheet0.png",
@@ -490,6 +485,21 @@
                 "url": "src/components/ToggleButton.js",
                 "type": "script",
                 "key": "ToggleButton"
+            },
+            {
+                "url": "assets/images/7.jpg",
+                "type": "image",
+                "key": "tulips"
+            },
+            {
+                "url": "assets/images/6.jpg",
+                "type": "image",
+                "key": "turtle"
+            },
+            {
+                "url": "src/scripts/TweenManager.js",
+                "type": "script",
+                "key": "TweenManager"
             },
             {
                 "url": "assets/images/window.png",

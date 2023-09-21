@@ -383,7 +383,7 @@ class GamePlayScene extends Phaser.Scene {
 				if (dragX > target.x - target.width / 2 && dragX < target.x + target.width / 2 && dragY > target.y - target.height / 2 && dragY < target.y + target.height / 2) {
 					gameObject.x = target.x;
 					gameObject.y = target.y;
-					if(gameObject.texture.key == target.texture.key){
+					if (gameObject.texture.key == target.texture.key) {
 						gameObject.disableInteractive();
 					}
 					break;
@@ -410,36 +410,35 @@ class GamePlayScene extends Phaser.Scene {
 		}
 
 		// Re-add the shuffled pieces to the scene in the new order
-		container.list.forEach(function(piece, index) {
-			console.log("pieces.....",piece)
+		container.list.forEach(function (piece, index) {
+			console.log("pieces.....", piece)
 			piece.y = (275 * index) + (20);
 		});
 	}
 
 
 	//to Add the functionalities in the gameplay scene button....
-	addListeners(){
-		this.zoom_In.setInteractive().on('pointerdown', ()=>{
+	addListeners() {
+		this.zoom_In.setInteractive().on('pointerdown', () => {
 			console.log("zoom in ")
 			this.zoomContainer(1.2); // Increase the container's scale
-		  });
+		});
 
 		this.zoom_Out.setInteractive().on('pointerdown', () => {
 			console.log("zoom in ")
 			this.zoomContainer(0.8); // Decrease the container's scale
-		  });
-
-		this.shuffle.setInteractive().on('pointerdown',()=>{
-		this.shufflePieces(this.piecesContainer)
 		});
 
+		this.shuffle.setInteractive().on('pointerdown', () => {
+			this.shufflePieces(this.piecesContainer)
+		});
 	}
 
-	 	zoomContainer(scaleFactor) {
+	zoomContainer(scaleFactor) {
 		// Multiply the current scale by the scaleFactor
 		this.catPuzzlePiece.scaleX *= scaleFactor;
 		this.catPuzzlePiece.scaleY *= scaleFactor;
-	  }
+	}
 	/* END-USER-CODE */
 }
 
