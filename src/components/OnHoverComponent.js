@@ -35,7 +35,7 @@ class OnHoverComponent extends UserComponent {
 		console.log("im in user Component ")
 		this.gameObject.setInteractive(); // Enable input events for the image
 		this.gameObject.on('pointerover', (pointer,gameObjects) => {
-			this.gameObject.setAlpha(0.7)
+			this.gameObject.setAlpha(1.2)
 		});
 		this.gameObject.on('pointerout', (pointer,gameObjects) => {
 			this.gameObject.setAlpha(1)

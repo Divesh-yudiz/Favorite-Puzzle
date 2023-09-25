@@ -297,22 +297,28 @@ class GamePlayScene extends Phaser.Scene {
 		this.add.existing(curtenPrefab);
 
 		// hint (components)
+		new OnHoverComponent(hint);
 		new PushOnClick(hint);
 
 		// zoom_In (components)
 		new PushOnClick(zoom_In);
+		new OnHoverComponent(zoom_In);
 
 		// zoom_Out (components)
 		new PushOnClick(zoom_Out);
+		new OnHoverComponent(zoom_Out);
 
 		// sample (components)
 		new PushOnClick(sample);
+		new OnHoverComponent(sample);
 
 		// showEdges (components)
 		new PushOnClick(showEdges);
+		new OnHoverComponent(showEdges);
 
 		// shuffle (components)
 		new PushOnClick(shuffle);
+		new OnHoverComponent(shuffle);
 
 		this.zoom_In = zoom_In;
 		this.zoom_Out = zoom_Out;
@@ -344,12 +350,15 @@ class GamePlayScene extends Phaser.Scene {
 
 	// Write your code here
 
+	pieceInitialPosX;
+	pieceInitialPosY;
+
 	create() {
 		this.editorCreate();
 		this.curtenPrefab.doorOpening();
-		var yOffset = 275;
-		for (var i = 0; i < 16; i++) {
-			var pieces = this.add.image(0 + 1602, (yOffset * i) + (20), 'cat_part' + (i + 1));
+		const yOffset = 275;
+		for (let i = 0; i < 16; i++) {
+			const pieces = this.add.image(1602, (yOffset * i) + (20), 'cat_part' + (i + 1));
 			this.physics.world.enable(pieces);
 			pieces.puzzleNo = i;
 			pieces.scaleX = 1.8;
@@ -357,15 +366,23 @@ class GamePlayScene extends Phaser.Scene {
 			pieces.setInteractive();
 			this.input.setDraggable(pieces);
 			this.piecesContainer.add(pieces);
+			pieces.initalPositionX = pieces.x;
+			pieces.initalPositionY = pieces.y;
 		}
-		var minY = -this.piecesContainer.getBounds().height + 1000;
-		var maxY = 100;
+
+		this.shufflePieces(this.piecesContainer)
+		const minY = -this.piecesContainer.getBounds().height + 1000;
+		const maxY = 100;
 		this.input.on('wheel', (pointer, gameObjects, deltaX, deltaY, deltaZ) => {
 			this.piecesContainer.y = Phaser.Math.Clamp(this.piecesContainer.y - deltaY, minY, maxY);
 		});
 
 		this.input.on('dragstart', (pointer, gameObject) => {
+			this.pieceInitialPosX = gameObject.x;
+			this.pieceInitialPosY = gameObject.y;
+
 			gameObject.setTint(0x00ff00);
+			gameObject.setScale(2, 2)
 		});
 
 		this.input.on('drag', (pointer, gameObject, dragX, dragY) => {
@@ -378,7 +395,7 @@ class GamePlayScene extends Phaser.Scene {
 			gameObject.clearTint();
 			dragX = pointer.x;
 			dragY = pointer.y;
-			for (var i = 0; i < this.catPuzzlePiece.list.length; i++) {
+			for (let i = 0; i < this.catPuzzlePiece.list.length; i++) {
 				const target = this.catPuzzlePiece.list[i];
 				if (dragX > target.x - target.width / 2 && dragX < target.x + target.width / 2 && dragY > target.y - target.height / 2 && dragY < target.y + target.height / 2) {
 					gameObject.x = target.x;
@@ -386,17 +403,25 @@ class GamePlayScene extends Phaser.Scene {
 					if (gameObject.texture.key == target.texture.key) {
 						gameObject.disableInteractive();
 					}
+					gameObject.setScale(1.8, 1.8)
 					break;
 				}
+				console.log("Main Object", gameObject)
+				console.log("Next Piece...", this.piecesContainer.list[gameObject.puzzleNo])
+				if (dragX > 1439 && dragX < 1757) {
+					this.piecesContainer.add(gameObject);
+					gameObject.x = gameObject.initalPositionX;
+				}
 			}
+			this.piecesContainer.list.forEach((piece, i) => piece.setPosition(1602, (275 * i) + (20)));
+			
 		});
 
-		// this.addListeners()
+		this.addListeners()
 	}
 
 	shufflePieces(container) {
 		var currentIndex = container.length, randomIndex, tempValue;
-
 		// While there remain elements to shuffle...
 		while (currentIndex !== 0) {
 			// Pick a remaining element...
@@ -404,32 +429,37 @@ class GamePlayScene extends Phaser.Scene {
 			currentIndex--;
 
 			// And swap it with the current element.
-			tempValue = container[currentIndex];
-			container[currentIndex] = container[randomIndex];
-			container[randomIndex] = tempValue;
+			tempValue = container.list[currentIndex];
+			container.list[currentIndex] = container.list[randomIndex];
+			container.list[randomIndex] = tempValue;
 		}
-
 		// Re-add the shuffled pieces to the scene in the new order
 		container.list.forEach(function (piece, index) {
-			console.log("pieces.....", piece)
+			// console.log("pieces.....", piece)
 			piece.y = (275 * index) + (20);
+			console.log("Index", index)
+			piece.initalPositionX = piece.x
+			piece.initalPositionY = piece.y
+			piece.puzzleNo = index;
 		});
+		// console.log("Container After Shuffle...",container)
 	}
 
 
 	//to Add the functionalities in the gameplay scene button....
 	addListeners() {
-		this.zoom_In.setInteractive().on('pointerdown', () => {
-			console.log("zoom in ")
-			this.zoomContainer(1.2); // Increase the container's scale
-		});
+		// this.zoom_In.setInteractive().on('pointerdown', () => {
+		// 	console.log("zoom in ")
+		// 	this.zoomContainer(1.2); // Increase the container's scale
+		// });
 
-		this.zoom_Out.setInteractive().on('pointerdown', () => {
-			console.log("zoom in ")
-			this.zoomContainer(0.8); // Decrease the container's scale
-		});
+		// this.zoom_Out.setInteractive().on('pointerdown', () => {
+		// 	console.log("zoom in ")
+		// 	this.zoomContainer(0.8); // Decrease the container's scale
+		// });
 
-		this.shuffle.setInteractive().on('pointerdown', () => {
+		this.shuffle.on('pointerdown', () => {
+			console.log("Shuffle clicked...")
 			this.shufflePieces(this.piecesContainer)
 		});
 	}

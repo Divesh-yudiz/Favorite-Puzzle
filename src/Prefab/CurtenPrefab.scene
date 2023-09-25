@@ -27,8 +27,8 @@
                         "key": "openingCurtens"
                     },
                     "x": 971,
-                    "scaleX": 1.8,
-                    "scaleY": 3.35,
+                    "scaleX": 2.5,
+                    "scaleY": 5,
                     "originX": 0
                 },
                 {
@@ -41,8 +41,8 @@
                         "key": "openingCurtens"
                     },
                     "x": -971,
-                    "scaleX": 1.8,
-                    "scaleY": 3.35,
+                    "scaleX": 2.5,
+                    "scaleY": 5,
                     "originX": 1
                 }
             ]

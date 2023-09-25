@@ -126,10 +126,10 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 		button_gold_1.scaleX = 1.5;
 		startGameBtnContainer.add(button_gold_1);
 
-		// gold_button_2
-		const gold_button_2 = scene.add.image(201, 190, "gold-button");
-		gold_button_2.scaleX = 1.5;
-		startGameBtnContainer.add(gold_button_2);
+		// gold_button
+		const gold_button = scene.add.image(201, 190, "gold-button");
+		gold_button.scaleX = 1.5;
+		startGameBtnContainer.add(gold_button);
 
 		// startGame
 		const startGame = scene.add.text(131, 174, "", {});
@@ -273,8 +273,8 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 		// toggleBtnOn (components)
 		new ToggleButton(toggleBtnOn);
 
-		// gold_button_2 (components)
-		new GlowButton(gold_button_2);
+		// startGameBtnContainer (components)
+		new OnHoverComponent(startGameBtnContainer);
 
 		this.button_close = button_close;
 		this.musicButtonContainer = musicButtonContainer;
@@ -284,7 +284,7 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 		this.startGameBtnContainer = startGameBtnContainer;
 		this.gold_button_3 = gold_button_3;
 		this.button_gold_1 = button_gold_1;
-		this.gold_button_2 = gold_button_2;
+		this.gold_button = gold_button;
 		this.puzzleImage = puzzleImage;
 
 		/* START-USER-CTR-CODE */
@@ -309,7 +309,7 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 	/** @type {Phaser.GameObjects.Image} */
 	button_gold_1;
 	/** @type {Phaser.GameObjects.Image} */
-	gold_button_2;
+	gold_button;
 	/** @type {Phaser.GameObjects.Image} */
 	puzzleImage;
 
@@ -319,36 +319,6 @@ class SelectPuzzle extends Phaser.GameObjects.Container {
 
 	currentButton = 1;
 
-	switchButtons(oScene) {
-		this.gold_button_2.setAlpha(0); // Start with the image invisible
-		console.log("Hello im switch Button ")
-		// Create a fade-in tween
-		const fadeInTween = this.scene.tweens.add({
-			targets: this.gold_button_2,
-			alpha: 1, // Fade to fully visible
-			duration: 1000, // 1000 milliseconds (1 second)
-			ease: 'Linear',
-			yoyo: true,
-			repeat: -1 // Repeat indefinitely
-		});
-
-		// Create a fade-out tween
-		const fadeOutTween = this.scene.tweens.add({
-			targets: this.gold_button_2,
-			alpha: 0, // Fade to fully invisible
-			duration: 1000, // 1000 milliseconds (1 second)
-			ease: 'Linear',
-			yoyo: true,
-			repeat: -1, // Repeat indefinitely
-			onComplete:()=>{
-				console.log("im fade out")
-			}
-		});
-
-		// Start both tweens simultaneously
-		fadeInTween.play();
-		fadeOutTween.play();
-	}
 	/* END-USER-CODE */
 }
 

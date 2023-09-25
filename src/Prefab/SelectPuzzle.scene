@@ -272,7 +272,9 @@
                     "id": "f1898e04-5d84-4de1-9a6f-95adf66ca650",
                     "label": "StartGameBtnContainer",
                     "scope": "CLASS",
-                    "components": [],
+                    "components": [
+                        "OnHoverComponent"
+                    ],
                     "list": [
                         {
                             "type": "Image",
@@ -303,11 +305,9 @@
                         {
                             "type": "Image",
                             "id": "e86f3746-3313-4168-96a7-025c8929765e",
-                            "label": "gold_button_2",
+                            "label": "gold_button",
                             "scope": "CLASS",
-                            "components": [
-                                "GlowButton"
-                            ],
+                            "components": [],
                             "texture": {
                                 "key": "gold-button"
                             },

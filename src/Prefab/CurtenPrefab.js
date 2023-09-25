@@ -10,15 +10,15 @@ class CurtenPrefab extends Phaser.GameObjects.Container {
 
 		// rightCurtens
 		const rightCurtens = scene.add.image(971, 0, "openingCurtens");
-		rightCurtens.scaleX = 1.8;
-		rightCurtens.scaleY = 3.35;
+		rightCurtens.scaleX = 2.5;
+		rightCurtens.scaleY = 5;
 		rightCurtens.setOrigin(0, 0.5);
 		this.add(rightCurtens);
 
 		// leftCurtne
 		const leftCurtne = scene.add.image(-971, 0, "openingCurtens");
-		leftCurtne.scaleX = 1.8;
-		leftCurtne.scaleY = 3.35;
+		leftCurtne.scaleX = 2.5;
+		leftCurtne.scaleY = 5;
 		leftCurtne.setOrigin(1, 0.5);
 		this.add(leftCurtne);
 
@@ -40,20 +40,67 @@ class CurtenPrefab extends Phaser.GameObjects.Container {
 	// Write your code here.
 
 	doorClosing(){
-		console.log("im in the prefab")
+			// this.leftCurtne.setAngle(8)
+			// this.rightCurtens.setAngle(8)
 		this.scene.tweens.add({
 			targets: this.rightCurtens,
-			x: 0,
+			x: -30,
 			y: 0,
+			angle:-8,
 			duration: 1000, 
-			ease: 'Bounce', 
+			ease: 'Sine.easeOut', 
+			onComplete:()=>{
+				this.scene.tweens.add({
+					targets: this.rightCurtens,
+					x: 10,
+					y: 0,
+					angle:2,
+					duration: 300, 
+					ease: 'Sine.easeOut', 
+					onComplete:()=>{
+							this.scene.tweens.add({
+								targets: this.rightCurtens,
+								x: -10,
+								y: 0,
+								angle:-1,
+								duration: 200, 
+								ease: 'Sine.easeOut', 
+								onComplete:()=>{	
+								}
+							});
+					}
+				});
+			}
 		});
 		this.scene.tweens.add({
 			targets: this.leftCurtne,
-			x: 0,
+			x: 30,
 			y: 0,
+			angle:8,
 			duration: 1000, 
-			ease: 'Bounce', 
+			ease: 'Sine.easeOut', 
+			onComplete:()=>{
+				this.scene.tweens.add({
+					targets: this.leftCurtne,
+					x: -10,
+					y: 0,
+					angle:2,
+					duration: 300, 
+					ease: 'Sine.easeOut', 
+					onComplete:()=>{
+						this.scene.tweens.add({
+							targets: this.leftCurtne,
+							x: 10,
+							y: 0,
+							angle:1,
+							duration: 200, 
+							ease: 'Sine.easeOut', 
+							onComplete:()=>{	
+							}
+						});
+					}
+				});
+			}
 		});
 	}
 	doorOpening(){
@@ -61,15 +108,29 @@ class CurtenPrefab extends Phaser.GameObjects.Container {
 			targets: this.rightCurtens,
 			x: 0,
 			y: 0,
-			duration: 0, 
-			ease: 'Linear', 
+			angle:0,
+			duration:0, 
+			ease: 'Sine.easeOut', 
 			onComplete:()=>{
 				this.scene.tweens.add({
 					targets: this.rightCurtens,
-					x: 971,
+					x: 10,
 					y: 0,
-					duration: 1000, 
-					ease: 'Linear', 
+					angle:-2,
+					duration: 500, 
+					ease: 'Sine.easeOut', 
+					onComplete:()=>{
+							this.scene.tweens.add({
+								targets: this.rightCurtens,
+								x: 1020,
+								y: 0,
+								angle:-8,
+								duration: 1000, 
+								ease: 'Sine.easeOut', 
+								onComplete:()=>{	
+								}
+							});
+					}
 				});
 			}
 		});
@@ -77,18 +138,66 @@ class CurtenPrefab extends Phaser.GameObjects.Container {
 			targets: this.leftCurtne,
 			x: 0,
 			y: 0,
-			duration:0, 
-			ease: 'Linear', 
-			onComplete: () => {
+			angle:0,
+			duration: 0, 
+			ease: 'Sine.easeOut', 
+			onComplete:()=>{
 				this.scene.tweens.add({
 					targets: this.leftCurtne,
-					x: -971,
+					x: -10,
 					y: 0,
-					duration: 1000, 
-					ease: 'Linear', 
+					angle:2,
+					duration: 500, 
+					ease: 'Sine.easeOut', 
+					onComplete:()=>{
+						this.scene.tweens.add({
+							targets: this.leftCurtne,
+							x: -1020,
+							y: 0,
+							angle:8,
+							duration: 1000, 
+							ease: 'Sine.easeOut', 
+							onComplete:()=>{	
+								this.leftCurtne.setAngle(0)
+							}
+						});
+					}
 				});
 			}
 		});
+		/////////////////////////////
+		// this.scene.tweens.add({
+		// 	targets: this.rightCurtens,
+		// 	x: 0,
+		// 	y: 0,
+		// 	duration: 0, 
+		// 	ease: 'Linear', 
+		// 	onComplete:()=>{
+		// 		this.scene.tweens.add({
+		// 			targets: this.rightCurtens,
+		// 			x: 971,
+		// 			y: 0,
+		// 			duration: 1000, 
+		// 			ease: 'Linear', 
+		// 		});
+		// 	}
+		// });
+		// this.scene.tweens.add({
+		// 	targets: this.leftCurtne,
+		// 	x: 0,
+		// 	y: 0,
+		// 	duration:0, 
+		// 	ease: 'Linear', 
+		// 	onComplete: () => {
+		// 		this.scene.tweens.add({
+		// 			targets: this.leftCurtne,
+		// 			x: -971,
+		// 			y: 0,
+		// 			duration: 1000, 
+		// 			ease: 'Linear', 
+		// 		});
+		// 	}
+		// });
 	}
 	/* END-USER-CODE */
 }

@@ -6,11 +6,12 @@ class TweenManager {
 
     glowEffect(image){
         console.log(image)
-        console.log("Hello im Glow Effect ")
+        image.setAlpha(0)
         this.oScene.add.tween({
             targets: image,
             alpha:1,
-            duration: 500,
+            duration: 1000,
+            ease:"Power",
             yoyo: true,
             repeat:-1,
         });

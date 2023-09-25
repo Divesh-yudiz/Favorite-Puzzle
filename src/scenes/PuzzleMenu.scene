@@ -32,7 +32,8 @@
             "x": 1795,
             "y": 540,
             "scaleX": 2,
-            "scaleY": 2
+            "scaleY": 2,
+            "tintTopLeft": "#d0d0d0"
         },
         {
             "type": "Image",

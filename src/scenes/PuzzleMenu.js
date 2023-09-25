@@ -23,6 +23,7 @@ class PuzzleMenu extends Phaser.Scene {
 		const rightButton = this.add.image(1795, 540, "button_arrow-sheet0");
 		rightButton.scaleX = 2;
 		rightButton.scaleY = 2;
+		rightButton.tintTopLeft = 13684944;
 
 		// LeftButton
 		const leftButton = this.add.image(147, 540, "button_arrow-sheet0");
@@ -278,19 +279,19 @@ class PuzzleMenu extends Phaser.Scene {
 	/* START-USER-CODE */
 
 	// Write your code here
-
+	addTween
 	create() {
 
 		// c.setinteractiveOnPuzzleImages
 		this.editorCreate();
 		// this.setinteractiveOnPuzzleImages();
+		this.curtenPrefab.doorOpening();
 		this.funcToAddEvents();
 
 		this.addTween = new TweenManager(this);
 
 		this.createIcon.setInteractive().on('pointerdown', this.openFilePicker, this);
 
-		this.curtenPrefab.doorOpening();
 
 		this.pageCount = 0;
 		this.totalPages = 1;
@@ -303,7 +304,7 @@ class PuzzleMenu extends Phaser.Scene {
 					targets: this.tweenContainer1,
 					x: this.tweenContainer1.x - 1540,
 					y: 350,
-					duration: 1000,
+					duration: 700,
 					ease: 'Linear',
 					onComplete: () => {
 						this.leftButton.setAlpha(1);
@@ -315,6 +316,22 @@ class PuzzleMenu extends Phaser.Scene {
 			}
 		})
 
+		this.rightButton.on("pointerover",()=>{
+			this.rightButton.setTint(0xd0d0d0);
+		})	
+		this.rightButton.on("pointerout",()=>{
+			console.log("im out")
+			this.rightButton.setTint(0xffffff)
+		})
+		this.leftButton.on("pointerover",()=>{
+			this.leftButton.setTint(0xd0d0d0);
+		})
+		this.leftButton.on("pointerout",()=>{
+			console.log("im out")
+			this.leftButton.setTint(0xffffff)
+		})
+
+
 		this.leftButton.setInteractive().on("pointerdown", () => {
 			if (this.leftButton.alpha === 1) {
 				this.pageCount--;
@@ -322,7 +339,7 @@ class PuzzleMenu extends Phaser.Scene {
 					targets: this.tweenContainer1,
 					x: this.tweenContainer1.x + 1540,
 					y: 350,
-					duration: 1000,
+					duration: 700,
 					ease: 'Linear',
 					onComplete: () => {
 						this.rightButton.setAlpha(1);
@@ -341,7 +358,7 @@ class PuzzleMenu extends Phaser.Scene {
 			setTimeout(() => {
 				this.scene.stop("PuzzleMenu")
 				this.scene.start("Level");
-			}, 1000);
+			}, 5000);
 
 		})
 	}
@@ -381,11 +398,18 @@ class PuzzleMenu extends Phaser.Scene {
 			if (["cat", "turtle", "tulips", "ice-cream", "butterfly", "flower"].includes(child.texture.key)) {
 				child.setInteractive().on('pointerdown',()=>{
 					this.selectPuzzle.visible=true;
-					this.selectPuzzle.switchButtons(this);
-					// console.log("Select Puzzle Obj",this.selectPuzzle)
-					this.addTween.glowEffect(this.selectPuzzle.gold_button_2)
+
+					this.addTween.glowEffect(this.selectPuzzle.gold_button)
+					// this.addTween.glowEffect(this.selectPuzzle.gold_button_2)
 					this.selectPuzzle.puzzleImage.setTexture(child.texture.key)
 					this.selectPuzzle.puzzleImage.setScale(0.28,0.24)
+				})
+
+				child.on("pointerover",()=>{
+					child.setAlpha(0.7);
+				})
+				child.on("pointerout",()=>{
+					child.setAlpha(1)
 				})
 			}
 		}, this);
@@ -394,7 +418,7 @@ class PuzzleMenu extends Phaser.Scene {
 			this.selectPuzzle.visible=false;
 		})
 
-		
+
 		this.selectPuzzle.button_gold_1.setInteractive().on('pointerdown',()=>{
 			this.selectPuzzle.visible=false;
 			this.curtenPrefab.doorClosing();

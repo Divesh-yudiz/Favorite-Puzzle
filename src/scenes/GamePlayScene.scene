@@ -50,6 +50,7 @@
             "id": "33d5793a-aaaf-4496-8507-5979a39320c3",
             "label": "hint",
             "components": [
+                "OnHoverComponent",
                 "PushOnClick"
             ],
             "texture": {
@@ -66,7 +67,8 @@
             "label": "zoom_In",
             "scope": "CLASS",
             "components": [
-                "PushOnClick"
+                "PushOnClick",
+                "OnHoverComponent"
             ],
             "texture": {
                 "key": "Zoom In"
@@ -82,7 +84,8 @@
             "label": "zoom_Out",
             "scope": "CLASS",
             "components": [
-                "PushOnClick"
+                "PushOnClick",
+                "OnHoverComponent"
             ],
             "texture": {
                 "key": "Zoom Out"
@@ -97,7 +100,8 @@
             "id": "a07cd750-91ad-4fb8-b117-a6c011460978",
             "label": "sample",
             "components": [
-                "PushOnClick"
+                "PushOnClick",
+                "OnHoverComponent"
             ],
             "texture": {
                 "key": "Sample"
@@ -112,7 +116,8 @@
             "id": "ccd4eefb-a957-409e-b920-6344613ffdae",
             "label": "showEdges",
             "components": [
-                "PushOnClick"
+                "PushOnClick",
+                "OnHoverComponent"
             ],
             "texture": {
                 "key": "ShowEdges"
@@ -128,7 +133,8 @@
             "label": "shuffle",
             "scope": "CLASS",
             "components": [
-                "PushOnClick"
+                "PushOnClick",
+                "OnHoverComponent"
             ],
             "texture": {
                 "key": "Shuffle"

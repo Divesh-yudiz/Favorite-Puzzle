@@ -266,7 +266,7 @@ class Level extends Phaser.Scene {
 				this.scene.stop("Level");
 
 				this.scene.start("PuzzleMenu");
-			}, 1000);
+			}, 2000);
 		})
 	}
 
