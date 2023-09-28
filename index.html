@@ -4,10 +4,10 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<meta http-equiv="X-UA-Compatible" content="ie=edge">
-	
+
 	<title>Jigsaw Puzzle</title>
 
-	<link rel="icon" href="./assets/images/logo-no-background.png" type="image/x-icon">
+	<link rel="icon" href="./assets/images/Preload Assets/Logo.png" type="image/x-icon">
 
 	<script src="lib/phaser.min.js"></script>
 	<script src="src/components/UserComponent.js"></script>
@@ -18,12 +18,20 @@
 	<script src="src/scenes/PuzzleMenu.js"></script>
 	<script src="src/scenes/GamePlayScene.js"></script>
 	<script src="src/main.js"></script>
+	<link rel="stylesheet preload" as="font" href="assets/fonts/CookieSupplyRegular.otf" type="font/otf" crossorigin />
+
 
 	<style>
 		body {
-			background: #2f2f2f;
+			background-color: #808080;
 			margin: 0;
 			padding: 0;
+			overflow: hidden;
+		}
+
+		@font-face {
+			font-family: CookieSupplyRegular;
+			src: url('assets/fonts/CookieSupplyRegular.otf');
 		}
 	</style>
 
@@ -32,6 +40,7 @@
 <body>
 	<script>
 		var puzzleKey = "";
+		var noOfPieces = 49;
 	</script>
 </body>
 

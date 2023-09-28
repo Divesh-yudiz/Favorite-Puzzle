@@ -24,11 +24,11 @@
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "openingCurtens"
+                        "key": "Curtain-right"
                     },
                     "x": 971,
-                    "scaleX": 2.5,
-                    "scaleY": 5,
+                    "scaleX": 1.5,
+                    "scaleY": 2,
                     "originX": 0
                 },
                 {
@@ -38,11 +38,11 @@
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "openingCurtens"
+                        "key": "Curtains-left"
                     },
                     "x": -971,
-                    "scaleX": 2.5,
-                    "scaleY": 5,
+                    "scaleX": 1.5,
+                    "scaleY": 2,
                     "originX": 1
                 }
             ]

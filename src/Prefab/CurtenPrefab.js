@@ -9,16 +9,16 @@ class CurtenPrefab extends Phaser.GameObjects.Container {
 		super(scene, x ?? -971, y ?? -377.06261955491254);
 
 		// rightCurtens
-		const rightCurtens = scene.add.image(971, 0, "openingCurtens");
-		rightCurtens.scaleX = 2.5;
-		rightCurtens.scaleY = 5;
+		const rightCurtens = scene.add.image(971, 0, "Curtain-right");
+		rightCurtens.scaleX = 1.5;
+		rightCurtens.scaleY = 2;
 		rightCurtens.setOrigin(0, 0.5);
 		this.add(rightCurtens);
 
 		// leftCurtne
-		const leftCurtne = scene.add.image(-971, 0, "openingCurtens");
-		leftCurtne.scaleX = 2.5;
-		leftCurtne.scaleY = 5;
+		const leftCurtne = scene.add.image(-971, 0, "Curtains-left");
+		leftCurtne.scaleX = 1.5;
+		leftCurtne.scaleY = 2;
 		leftCurtne.setOrigin(1, 0.5);
 		this.add(leftCurtne);
 
@@ -39,35 +39,36 @@ class CurtenPrefab extends Phaser.GameObjects.Container {
 
 	// Write your code here.
 
-	doorClosing(){
-			// this.leftCurtne.setAngle(8)
-			// this.rightCurtens.setAngle(8)
+	doorClosing() {
+		// this.leftCurtne.setAngle(8)
+		// this.rightCurtens.setAngle(8)
+		console.log("door closing")
 		this.scene.tweens.add({
 			targets: this.rightCurtens,
 			x: -30,
 			y: 0,
-			angle:-8,
-			duration: 1000, 
-			ease: 'Sine.easeOut', 
-			onComplete:()=>{
+			angle: -8,
+			duration: 1000,
+			ease: 'Sine.easeOut',
+			onComplete: () => {
 				this.scene.tweens.add({
 					targets: this.rightCurtens,
 					x: 10,
 					y: 0,
-					angle:2,
-					duration: 300, 
-					ease: 'Sine.easeOut', 
-					onComplete:()=>{
-							this.scene.tweens.add({
-								targets: this.rightCurtens,
-								x: -10,
-								y: 0,
-								angle:-1,
-								duration: 200, 
-								ease: 'Sine.easeOut', 
-								onComplete:()=>{	
-								}
-							});
+					angle: 2,
+					duration: 300,
+					ease: 'Sine.easeOut',
+					onComplete: () => {
+						this.scene.tweens.add({
+							targets: this.rightCurtens,
+							x: -30,
+							y: 0,
+							angle: -1,
+							duration: 200,
+							ease: 'Sine.easeOut',
+							onComplete: () => {
+							}
+						});
 					}
 				});
 			}
@@ -76,26 +77,26 @@ class CurtenPrefab extends Phaser.GameObjects.Container {
 			targets: this.leftCurtne,
 			x: 30,
 			y: 0,
-			angle:8,
-			duration: 1000, 
-			ease: 'Sine.easeOut', 
-			onComplete:()=>{
+			angle: 8,
+			duration: 1000,
+			ease: 'Sine.easeOut',
+			onComplete: () => {
 				this.scene.tweens.add({
 					targets: this.leftCurtne,
 					x: -10,
 					y: 0,
-					angle:2,
-					duration: 300, 
-					ease: 'Sine.easeOut', 
-					onComplete:()=>{
+					angle: 2,
+					duration: 300,
+					ease: 'Sine.easeOut',
+					onComplete: () => {
 						this.scene.tweens.add({
 							targets: this.leftCurtne,
-							x: 10,
+							x: 30,
 							y: 0,
-							angle:1,
-							duration: 200, 
-							ease: 'Sine.easeOut', 
-							onComplete:()=>{	
+							angle: 1,
+							duration: 200,
+							ease: 'Sine.easeOut',
+							onComplete: () => {
 							}
 						});
 					}
@@ -103,61 +104,61 @@ class CurtenPrefab extends Phaser.GameObjects.Container {
 			}
 		});
 	}
-	doorOpening(){
+	doorOpening() {
 		this.scene.tweens.add({
 			targets: this.rightCurtens,
-			x: 0,
+			x: -30,
 			y: 0,
-			angle:0,
-			duration:0, 
-			ease: 'Sine.easeOut', 
-			onComplete:()=>{
+			angle: 0,
+			duration: 0,
+			ease: 'Sine.easeOut',
+			onComplete: () => {
 				this.scene.tweens.add({
 					targets: this.rightCurtens,
 					x: 10,
 					y: 0,
-					angle:-2,
-					duration: 500, 
-					ease: 'Sine.easeOut', 
-					onComplete:()=>{
-							this.scene.tweens.add({
-								targets: this.rightCurtens,
-								x: 1020,
-								y: 0,
-								angle:-8,
-								duration: 1000, 
-								ease: 'Sine.easeOut', 
-								onComplete:()=>{	
-								}
-							});
+					angle: -2,
+					duration: 500,
+					ease: 'Sine.easeOut',
+					onComplete: () => {
+						this.scene.tweens.add({
+							targets: this.rightCurtens,
+							x: 1040,
+							y: 0,
+							angle: -8,
+							duration: 1000,
+							ease: 'Sine.easeOut',
+							onComplete: () => {
+							}
+						});
 					}
 				});
 			}
 		});
 		this.scene.tweens.add({
 			targets: this.leftCurtne,
-			x: 0,
+			x: 30,
 			y: 0,
-			angle:0,
-			duration: 0, 
-			ease: 'Sine.easeOut', 
-			onComplete:()=>{
+			angle: 0,
+			duration: 0,
+			ease: 'Sine.easeOut',
+			onComplete: () => {
 				this.scene.tweens.add({
 					targets: this.leftCurtne,
 					x: -10,
 					y: 0,
-					angle:2,
-					duration: 500, 
-					ease: 'Sine.easeOut', 
-					onComplete:()=>{
+					angle: 2,
+					duration: 500,
+					ease: 'Sine.easeOut',
+					onComplete: () => {
 						this.scene.tweens.add({
 							targets: this.leftCurtne,
 							x: -1020,
 							y: 0,
-							angle:8,
-							duration: 1000, 
-							ease: 'Sine.easeOut', 
-							onComplete:()=>{	
+							angle: 8,
+							duration: 1000,
+							ease: 'Sine.easeOut',
+							onComplete: () => {
 								this.leftCurtne.setAngle(0)
 							}
 						});

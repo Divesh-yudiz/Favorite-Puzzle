@@ -22,18 +22,22 @@ class Preload extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// loading
-		const loading = this.add.sprite(964, 477, "loading_win-sheet0", 0);
-		loading.scaleX = 3;
-		loading.scaleY = 3;
+		// background_preload
+		this.add.image(960, 540, "Background preload");
 
-		this.loading = loading;
+		// logo
+		this.add.image(966, 454, "Logo");
+
+		// play_Button
+		const play_Button = this.add.image(960, 813, "Play-Button");
+
+		this.play_Button = play_Button;
 
 		this.events.emit("scene-awake");
 	}
 
-	/** @type {Phaser.GameObjects.Sprite} */
-	loading;
+	/** @type {Phaser.GameObjects.Image} */
+	play_Button;
 
 	/* START-USER-CODE */
 
@@ -44,10 +48,18 @@ class Preload extends Phaser.Scene {
 
 		this.editorPreload();
 
-		this.loading.anims.play("loadingAnimation",true) 
-		// this.loading.anims.play("loadingAnimation")
+		// this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("GamePlayScene"));
+		this.play_Button.setInteractive().on("pointerdown",()=>{
+			this.scene.stop("Preload");
+			this.scene.start("Level");
+		})
 
-		this.load.on(Phaser.Loader.Events.COMPLETE, () => this.scene.start("Level"));
+		this.play_Button.on("pointerover",()=>{
+			this.play_Button.setScale(1.2,1.2)
+		})
+		this.play_Button.on("pointerout",()=>{
+			this.play_Button.setScale(1,1)
+		})
 	}
 
 	/* END-USER-CODE */

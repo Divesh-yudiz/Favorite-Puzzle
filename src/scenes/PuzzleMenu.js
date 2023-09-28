@@ -16,237 +16,111 @@ class PuzzleMenu extends Phaser.Scene {
 	/** @returns {void} */
 	editorCreate() {
 
-		// bg_image
-		this.add.image(960, 540, "bg-image");
+		// background
+		this.add.image(960, 540, "Background");
 
 		// rightButton
-		const rightButton = this.add.image(1795, 540, "button_arrow-sheet0");
-		rightButton.scaleX = 2;
-		rightButton.scaleY = 2;
+		const rightButton = this.add.image(1781, 540, "Next-button");
 		rightButton.tintTopLeft = 13684944;
 
 		// LeftButton
-		const leftButton = this.add.image(147, 540, "button_arrow-sheet0");
-		leftButton.scaleX = 2;
-		leftButton.scaleY = 2;
+		const leftButton = this.add.image(126, 540, "Next-button");
 		leftButton.flipX = true;
 
 		// go_back_btn
-		const go_back_btn = this.add.image(74, 70, "button_back-sheet0");
-		go_back_btn.scaleX = 1.5;
-		go_back_btn.scaleY = 1.5;
+		const go_back_btn = this.add.image(80, 88, "Back-button");
 
 		// tweenContainer1
 		const tweenContainer1 = this.add.container(2120, 350);
 
 		// preview_box_6
-		const preview_box_6 = this.add.image(0, 0, "preview_box");
-		preview_box_6.scaleX = 1.7;
-		preview_box_6.scaleY = 1.9;
+		const preview_box_6 = this.add.image(140, -35, "Square");
 		tweenContainer1.add(preview_box_6);
 
 		// preview_box_7
-		const preview_box_7 = this.add.image(400, 0, "preview_box");
-		preview_box_7.scaleX = 1.7;
-		preview_box_7.scaleY = 1.9;
+		const preview_box_7 = this.add.image(663, -35, "Square");
 		tweenContainer1.add(preview_box_7);
 
 		// preview_box_8
-		const preview_box_8 = this.add.image(800, 0, "preview_box");
-		preview_box_8.scaleX = 1.7;
-		preview_box_8.scaleY = 1.9;
+		const preview_box_8 = this.add.image(1186, -35, "Square");
 		tweenContainer1.add(preview_box_8);
 
 		// preview_box_9
-		const preview_box_9 = this.add.image(0, 400, "preview_box");
-		preview_box_9.scaleX = 1.7;
-		preview_box_9.scaleY = 1.9;
+		const preview_box_9 = this.add.image(140, 416, "Square");
 		tweenContainer1.add(preview_box_9);
 
 		// preview_box_10
-		const preview_box_10 = this.add.image(400, 400, "preview_box");
-		preview_box_10.scaleX = 1.7;
-		preview_box_10.scaleY = 1.9;
+		const preview_box_10 = this.add.image(663, 416, "Square");
 		tweenContainer1.add(preview_box_10);
 
 		// preview_box_11
-		const preview_box_11 = this.add.image(800, 400, "preview_box");
-		preview_box_11.scaleX = 1.7;
-		preview_box_11.scaleY = 1.9;
+		const preview_box_11 = this.add.image(1186, 416, "Square");
 		tweenContainer1.add(preview_box_11);
 
 		// preview_box
-		const preview_box = this.add.image(-1540, 400, "preview_box");
-		preview_box.scaleX = 1.7;
-		preview_box.scaleY = 1.9;
+		const preview_box = this.add.image(-1678, 419, "Square");
 		tweenContainer1.add(preview_box);
 
 		// preview_box_1
-		const preview_box_1 = this.add.image(-1140, 400, "preview_box");
-		preview_box_1.scaleX = 1.7;
-		preview_box_1.scaleY = 1.9;
+		const preview_box_1 = this.add.image(-1163, 416, "Square");
 		tweenContainer1.add(preview_box_1);
 
 		// preview_box_2
-		const preview_box_2 = this.add.image(-740, 400, "preview_box");
-		preview_box_2.scaleX = 1.7;
-		preview_box_2.scaleY = 1.9;
+		const preview_box_2 = this.add.image(-659, 416, "Square");
 		tweenContainer1.add(preview_box_2);
 
 		// preview_box_3
-		const preview_box_3 = this.add.image(-740, 0, "preview_box");
-		preview_box_3.scaleX = 1.7;
-		preview_box_3.scaleY = 1.9;
+		const preview_box_3 = this.add.image(-653, -35, "Square");
 		tweenContainer1.add(preview_box_3);
 
 		// preview_box_4
-		const preview_box_4 = this.add.image(-1140, 0, "preview_box");
-		preview_box_4.scaleX = 1.7;
-		preview_box_4.scaleY = 1.9;
+		const preview_box_4 = this.add.image(-1158, -39, "Square");
 		tweenContainer1.add(preview_box_4);
 
 		// preview_box_5
-		const preview_box_5 = this.add.image(-1540, 0, "preview_box");
-		preview_box_5.scaleX = 1.7;
-		preview_box_5.scaleY = 1.9;
+		const preview_box_5 = this.add.image(-1681, -39, "Square");
 		tweenContainer1.add(preview_box_5);
 
 		// flower
-		const flower = this.add.image(-1542, -34, "flower");
-		flower.scaleX = 0.25;
-		flower.scaleY = 0.28;
+		const flower = this.add.image(-1678, -39, "Image-1");
 		tweenContainer1.add(flower);
 
 		// butterfly
-		const butterfly = this.add.image(-1143, -35, "butterfly");
-		butterfly.scaleX = 0.25;
-		butterfly.scaleY = 0.43;
+		const butterfly = this.add.image(-1155, -36, "Image-2");
 		tweenContainer1.add(butterfly);
 
 		// ice_cream
-		const ice_cream = this.add.image(-739, -32, "ice-cream");
-		ice_cream.scaleX = 0.4;
-		ice_cream.scaleY = 0.35;
+		const ice_cream = this.add.image(-657, -29, "Image-3");
 		tweenContainer1.add(ice_cream);
 
 		// tulips
-		const tulips = this.add.image(-1542, 367, "tulips");
-		tulips.scaleX = 0.37;
-		tulips.scaleY = 0.28;
+		const tulips = this.add.image(-1681, 417, "Image-4");
 		tweenContainer1.add(tulips);
 
 		// turtle
-		const turtle = this.add.image(-1143, 369, "turtle");
-		turtle.scaleX = 0.26;
-		turtle.scaleY = 0.5;
+		const turtle = this.add.image(-1163, 424, "Image-5");
 		tweenContainer1.add(turtle);
 
 		// cat
-		const cat = this.add.image(-745, 369, "cat");
-		cat.scaleX = 0.32;
-		cat.scaleY = 0.35;
+		const cat = this.add.image(-655, 419, "Image-6");
 		tweenContainer1.add(cat);
-
-		// CurtenPrefab
-		const curtenPrefab = new CurtenPrefab(this, 960, 540);
-		this.add.existing(curtenPrefab);
-
-		// panel_h
-		const panel_h = this.add.image(979, -17, "panel_h");
-		panel_h.scaleX = 3;
-		panel_h.scaleY = 2.5;
-
-		// daily
-		const daily = this.add.image(1055, 52, "Daily");
-		daily.scaleX = 1.2;
-		daily.scaleY = 1.2;
-
-		// filter
-		const filter = this.add.image(794, 53, "Filter");
-
-		// category
-		const category = this.add.image(1176, 56, "Category");
-		category.scaleX = 1.1;
-		category.scaleY = 1.1;
-
-		// createIcon
-		const createIcon = this.add.image(916, 53, "Create");
-		createIcon.scaleX = 1.2;
-		createIcon.scaleY = 1.2;
-
-		// Filter_text
-		const filter_text = this.add.text(767, 84, "", {});
-		filter_text.text = "Filter";
-		filter_text.setStyle({ "color": "#fae016ff", "fontFamily": "New Times Roman", "fontSize": "20px" });
-
-		// creat_text
-		const creat_text = this.add.text(893, 84, "", {});
-		creat_text.text = "Create";
-		creat_text.setStyle({ "color": "#fae016ff", "fontFamily": "New Times Roman", "fontSize": "20px" });
-
-		// Filter_2
-		const filter_2 = this.add.text(1030, 85, "", {});
-		filter_2.text = "Daily";
-		filter_2.setStyle({ "color": "#fae016ff", "fontFamily": "New Times Roman", "fontSize": "20px" });
-
-		// Filter_3
-		const filter_3 = this.add.text(1145, 84, "", {});
-		filter_3.text = "Category";
-		filter_3.setStyle({ "color": "#fae016ff", "fontFamily": "New Times Roman", "fontSize": "20px" });
-
-		// storeBtn
-		const storeBtn = this.add.image(1782, 57, "panel_h");
-		storeBtn.scaleX = 0.8;
-		storeBtn.scaleY = 0.7;
-
-		// icon_malahit_sheet0
-		const icon_malahit_sheet0 = this.add.image(1730, 61, "icon_malahit-sheet0");
-		icon_malahit_sheet0.scaleX = 1.3;
-		icon_malahit_sheet0.scaleY = 1.3;
-
-		// button_addcoin_sheet0
-		const button_addcoin_sheet0 = this.add.image(1840, 60, "button_addcoin-sheet0");
-
-		// coins
-		const coins = this.add.text(1767, 39, "", {});
-		coins.text = "55";
-		coins.setStyle({ "color": "#ffe22dff", "fontFamily": "Mew Times Roman", "fontSize": "40px" });
 
 		// selectPuzzle
 		const selectPuzzle = new SelectPuzzle(this, 960, 540);
 		this.add.existing(selectPuzzle);
 		selectPuzzle.visible = false;
 
-		// daily (components)
-		new OnHoverComponent(daily);
-
-		// filter (components)
-		new OnHoverComponent(filter);
-
-		// category (components)
-		new OnHoverComponent(category);
-
-		// createIcon (components)
-		new OnHoverComponent(createIcon);
-
-		// storeBtn (components)
-		new OnHoverComponent(storeBtn);
-
-		// button_addcoin_sheet0 (components)
-		new OnHoverComponent(button_addcoin_sheet0);
+		// CurtenPrefab
+		const curtenPrefab = new CurtenPrefab(this, 960, 540);
+		this.add.existing(curtenPrefab);
+		curtenPrefab.visible = true;
 
 		this.rightButton = rightButton;
 		this.leftButton = leftButton;
 		this.go_back_btn = go_back_btn;
 		this.tweenContainer1 = tweenContainer1;
-		this.curtenPrefab = curtenPrefab;
-		this.daily = daily;
-		this.filter = filter;
-		this.category = category;
-		this.createIcon = createIcon;
-		this.storeBtn = storeBtn;
-		this.coins = coins;
 		this.selectPuzzle = selectPuzzle;
+		this.curtenPrefab = curtenPrefab;
 
 		this.events.emit("scene-awake");
 	}
@@ -259,22 +133,10 @@ class PuzzleMenu extends Phaser.Scene {
 	go_back_btn;
 	/** @type {Phaser.GameObjects.Container} */
 	tweenContainer1;
-	/** @type {CurtenPrefab} */
-	curtenPrefab;
-	/** @type {Phaser.GameObjects.Image} */
-	daily;
-	/** @type {Phaser.GameObjects.Image} */
-	filter;
-	/** @type {Phaser.GameObjects.Image} */
-	category;
-	/** @type {Phaser.GameObjects.Image} */
-	createIcon;
-	/** @type {Phaser.GameObjects.Image} */
-	storeBtn;
-	/** @type {Phaser.GameObjects.Text} */
-	coins;
 	/** @type {SelectPuzzle} */
 	selectPuzzle;
+	/** @type {CurtenPrefab} */
+	curtenPrefab;
 
 	/* START-USER-CODE */
 
@@ -290,67 +152,67 @@ class PuzzleMenu extends Phaser.Scene {
 
 		this.addTween = new TweenManager(this);
 
-		this.createIcon.setInteractive().on('pointerdown', this.openFilePicker, this);
+		// this.createIcon.setInteractive().on('pointerdown', this.openFilePicker, this);
 
 
 		this.pageCount = 0;
 		this.totalPages = 1;
 		this.leftButton.setAlpha(0);
 
-		this.rightButton.setInteractive().on("pointerdown", () => {
-			if (this.rightButton.alpha === 1) {
-				this.pageCount++;
-				this.tweens.add({
-					targets: this.tweenContainer1,
-					x: this.tweenContainer1.x - 1540,
-					y: 350,
-					duration: 700,
-					ease: 'Linear',
-					onComplete: () => {
-						this.leftButton.setAlpha(1);
-						if(this.pageCount === this.totalPages) {
-							this.rightButton.setAlpha(0);
-						}
-					}
-				});
-			}
-		})
+		// this.rightButton.setInteractive().on("pointerdown", () => {
+		// 	if (this.rightButton.alpha === 1) {
+		// 		this.pageCount++;
+		// 		this.tweens.add({
+		// 			targets: this.tweenContainer1,
+		// 			x: this.tweenContainer1.x - 1540,
+		// 			y: 350,
+		// 			duration: 700,
+		// 			ease: 'Linear',
+		// 			onComplete: () => {
+		// 				this.leftButton.setAlpha(1);
+		// 				if(this.pageCount === this.totalPages) {
+		// 					this.rightButton.setAlpha(0);
+		// 				}
+		// 			}
+		// 		});
+		// 	}
+		// })
 
-		this.rightButton.on("pointerover",()=>{
+		this.rightButton.on("pointerover", () => {
 			this.rightButton.setTint(0xd0d0d0);
-		})	
-		this.rightButton.on("pointerout",()=>{
+		})
+		this.rightButton.on("pointerout", () => {
 			console.log("im out")
 			this.rightButton.setTint(0xffffff)
 		})
-		this.leftButton.on("pointerover",()=>{
+		this.leftButton.on("pointerover", () => {
 			this.leftButton.setTint(0xd0d0d0);
 		})
-		this.leftButton.on("pointerout",()=>{
+		this.leftButton.on("pointerout", () => {
 			console.log("im out")
 			this.leftButton.setTint(0xffffff)
 		})
 
 
-		this.leftButton.setInteractive().on("pointerdown", () => {
-			if (this.leftButton.alpha === 1) {
-				this.pageCount--;
-				this.tweens.add({
-					targets: this.tweenContainer1,
-					x: this.tweenContainer1.x + 1540,
-					y: 350,
-					duration: 700,
-					ease: 'Linear',
-					onComplete: () => {
-						this.rightButton.setAlpha(1);
-						if(this.pageCount === 0) {
-							this.leftButton.setAlpha(0);
-							this.pageCount = 0;
-						}
-					}	
-				});
-			}
-		});
+		// this.leftButton.setInteractive().on("pointerdown", () => {
+		// 	if (this.leftButton.alpha === 1) {
+		// 		this.pageCount--;
+		// 		this.tweens.add({
+		// 			targets: this.tweenContainer1,
+		// 			x: this.tweenContainer1.x + 1540,
+		// 			y: 350,
+		// 			duration: 700,
+		// 			ease: 'Linear',
+		// 			onComplete: () => {
+		// 				this.rightButton.setAlpha(1);
+		// 				if(this.pageCount === 0) {
+		// 					this.leftButton.setAlpha(0);
+		// 					this.pageCount = 0;
+		// 				}
+		// 			}	
+		// 		});
+		// 	}
+		// });
 
 		this.go_back_btn.setInteractive();
 		this.go_back_btn.on('pointerdown', () => {
@@ -371,14 +233,14 @@ class PuzzleMenu extends Phaser.Scene {
 		fileInput.accept = 'image/*';
 
 		// Listen for the 'change' event on the input element
-		fileInput.addEventListener('change', function(event) {
+		fileInput.addEventListener('change', function (event) {
 			var file = event.target.files[0];
 
 			if (file) {
 				var reader = new FileReader();
 
 				// Read the selected image as a data URL
-				reader.onload = function(event) {
+				reader.onload = function (event) {
 					// Set the image's texture to the loaded data URL
 					image.setTexture(event.target.result);
 					image.setVisible(true); // Show the image
@@ -387,49 +249,92 @@ class PuzzleMenu extends Phaser.Scene {
 				reader.readAsDataURL(file);
 			}
 		});
-
 		// Trigger a click event on the file input to open the file picker
 		fileInput.click();
 	}
 
-	funcToAddEvents(){
-		this.tweenContainer1.each(function(child) {
+	funcToAddEvents() {
+		this.tweenContainer1.each(function (child) {
+			// console.log(child)
 			// Check if the key of the image matches one of the specified keys
-			if (["cat", "turtle", "tulips", "ice-cream", "butterfly", "flower"].includes(child.texture.key)) {
-				child.setInteractive().on('pointerdown',()=>{
-					this.selectPuzzle.visible=true;
-
-					this.addTween.glowEffect(this.selectPuzzle.gold_button)
-					// this.addTween.glowEffect(this.selectPuzzle.gold_button_2)
+			if (["Image-1", "Image-2", "Image-3", "Image-4", "Image-5", "Image-6"].includes(child.texture.key)) {
+				child.setInteractive().on('pointerdown', () => {
+					this.tweenContainer1.list.forEach((otherChild) => {
+						otherChild.disableInteractive();
+					});
+					this.selectPuzzle.visible = true;
+					// this.addTween.glowEffect(this.selectPuzzle.gold_button)
 					this.selectPuzzle.puzzleImage.setTexture(child.texture.key)
-					this.selectPuzzle.puzzleImage.setScale(0.28,0.24)
+					this.selectPuzzle.puzzleImage.setScale(0.8, 0.8)
+					// this.selectPuzzle.puzzleImage.setScale(0.28,0.24)
+					puzzleKey = this.selectPuzzle.puzzleImage.texture.key
+					this.addTween.glowEffect(this.selectPuzzle.new_game_button)
+					// console.log(puzzleKey)
 				})
 
-				child.on("pointerover",()=>{
+				child.on("pointerover", () => {
 					child.setAlpha(0.7);
 				})
-				child.on("pointerout",()=>{
+				child.on("pointerout", () => {
 					child.setAlpha(1)
 				})
 			}
 		}, this);
 
-		this.selectPuzzle.button_close.setInteractive().on('pointerdown',()=>{
-			this.selectPuzzle.visible=false;
+		this.selectPuzzle.button_close.setInteractive().on('pointerdown', () => {
+			this.selectPuzzle.visible = false;
+
+			this.tweenContainer1.list.forEach((otherChild) => {
+				otherChild.setInteractive();
+			});
 		})
 
-
-		this.selectPuzzle.button_gold_1.setInteractive().on('pointerdown',()=>{
-			this.selectPuzzle.visible=false;
+		this.selectPuzzle.new_game_button.setInteractive().on('pointerdown', () => {
+			this.selectPuzzle.visible = false;
 			this.curtenPrefab.doorClosing();
-			setTimeout(()=>{
+			setTimeout(() => {
 				this.scene.stop("PuzzleMenu");
 				this.scene.start("GamePlayScene");
-			},1500)
+			}, 1700)
 		})
+
+		// Reset the scale of all objects to 1
+		this.selectPuzzle.levelSelectorContainer.list.forEach((object, index) => {
+			// this.addTween.hoverEffect(object)
+			object.setInteractive().on("pointerdown", () => {
+				// Reset the scale of all objects to 1
+				this.selectPuzzle.levelSelectorContainer.list.forEach((otherObject) => {
+					otherObject.setScale(1, 1);
+				});
+				// Set the scale of the clicked object to 1.5
+				object.setScale(1.5, 1.5);
+				noOfPieces = object._text
+				// setImage(object);
+				if (object._text == 49) {
+					console.log("im 16")
+					this.selectPuzzle.dummyPuzzlePiece2.setScale(0.75, 0.75)
+					this.selectPuzzle.dummyPuzzlePiece1.setScale(0.75, 0.75)
+				} else if (object._text == 25) {
+					console.log("im 25")
+					this.selectPuzzle.dummyPuzzlePiece2.setScale(1, 1)
+					this.selectPuzzle.dummyPuzzlePiece1.setScale(1, 1)
+				} else if (object._text ==16) {
+					console.log("im 49")
+					this.selectPuzzle.dummyPuzzlePiece2.setScale(1.25, 1.25)
+					this.selectPuzzle.dummyPuzzlePiece1.setScale(1.25, 1.25)
+				}
+			});
+		});
+
+		function setImage(image) {
+			console.log("Into the set Image", image._text)
+		}
+
+
+
 	}
 
-	update(){
+	update() {
 	}
 
 	/* END-USER-CODE */

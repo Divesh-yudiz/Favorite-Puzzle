@@ -31,15 +31,35 @@ class PushOnClick extends UserComponent {
 
 	awake() {
 
-		this.gameObject.setInteractive().on("pointerdown", () => {
-			this.scene.add.tween({
-				targets: this.gameObject,
-				scaleX: "*=0.8",
-				scaleY: "*=0.8",
-				duration: 80,
-				yoyo: true
-			});
-		});
+		// this.gameObject.setInteractive().on("pointerdown", () => {
+		// 	this.scene.add.tween({
+		// 		targets: this.gameObject,
+		// 		scaleX: "*=0.8",
+		// 		scaleY: "*=0.8",
+		// 		duration: 80,
+		// 		yoyo: true
+		// 	});
+		// });
+
+		// this.gameObject.setInteractive().on("pointerover", () => {
+		// 	console.log("pointer Over")
+		// 	this.scene.add.tween({
+		// 		targets: this.gameObject,
+		// 		scaleX: 1.7,
+		// 		scaleY: 1.7,
+		// 		duration: 80,
+		// 	});
+		// });
+		// this.gameObject.setInteractive().on("pointerout", () => {
+		// 	console.log("pointer Moved")
+		// 	this.scene.add.tween({
+		// 		targets: this.gameObject,
+		// 		scaleY: 1.5,
+		// 		scaleX: 1.5,
+		// 		duration: 80,
+		// 	});
+		// });
+
 	}
 
 	/* END-USER-CODE */

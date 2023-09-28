@@ -13,19 +13,38 @@
     },
     "displayList": [
         {
-            "type": "Sprite",
-            "id": "256f96b3-5614-4911-afd2-829c7ae416e8",
-            "label": "loading",
+            "type": "Image",
+            "id": "4924d465-bbfb-4e60-a707-d603a6ea1020",
+            "label": "background_preload",
+            "components": [],
+            "texture": {
+                "key": "Background preload"
+            },
+            "x": 960,
+            "y": 540
+        },
+        {
+            "type": "Image",
+            "id": "b812f21f-d1a0-43e4-a0b9-5bc9b4541d81",
+            "label": "logo",
+            "components": [],
+            "texture": {
+                "key": "Logo"
+            },
+            "x": 966,
+            "y": 454
+        },
+        {
+            "type": "Image",
+            "id": "5b08ae54-e8db-4df2-a785-cafc7da5532b",
+            "label": "play_Button",
             "scope": "CLASS",
             "components": [],
             "texture": {
-                "key": "loading_win-sheet0",
-                "frame": 0
+                "key": "Play-Button"
             },
-            "x": 964,
-            "y": 477,
-            "scaleX": 3,
-            "scaleY": 3
+            "x": 960,
+            "y": 813
         }
     ],
     "plainObjects": [],

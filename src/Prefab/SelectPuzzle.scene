@@ -19,83 +19,25 @@
             "list": [
                 {
                     "type": "Rectangle",
-                    "id": "2fe1de1c-9eb8-4323-98df-8275c69e3c6e",
+                    "id": "aedcb69d-611f-482b-a7e9-052abda26d15",
                     "label": "rectangle_1",
                     "components": [],
+                    "alpha": 0.3,
                     "isFilled": true,
-                    "fillColor": "#020202",
-                    "fillAlpha": 0.3,
+                    "fillColor": "#000000",
                     "width": 1920,
-                    "height": 1200
+                    "height": 1080
                 },
                 {
                     "type": "Image",
-                    "id": "95249d29-8298-4643-be35-9981a1323863",
-                    "label": "panel_h",
+                    "id": "6cb9c776-1f6d-47e9-bc95-61621d990e27",
+                    "label": "game_difficulty_board",
                     "components": [],
                     "texture": {
-                        "key": "panel_h"
+                        "key": "Game-difficulty-board"
                     },
-                    "scaleX": 4,
-                    "scaleY": 5
-                },
-                {
-                    "type": "Image",
-                    "id": "d301c3c4-7fe0-48b9-9925-4c212d5bb522",
-                    "label": "window_dekor_sheet0",
-                    "components": [],
-                    "texture": {
-                        "key": "window_dekor-sheet0"
-                    },
-                    "x": -408,
-                    "y": -128,
-                    "scaleX": 1.5,
-                    "scaleY": 1.5,
-                    "angle": -56
-                },
-                {
-                    "type": "Image",
-                    "id": "3b0e45a4-3aa5-4562-8306-ea0829f39041",
-                    "label": "window_dekor_sheet",
-                    "components": [],
-                    "texture": {
-                        "key": "window_dekor-sheet0"
-                    },
-                    "x": -351,
-                    "y": -194,
-                    "scaleX": 1.5,
-                    "scaleY": 1.5,
-                    "angle": -56,
-                    "flipX": true
-                },
-                {
-                    "type": "Image",
-                    "id": "009b29f1-cb8f-4ca0-b545-e8f932783e60",
-                    "label": "window_dekor_sheet_1",
-                    "components": [],
-                    "texture": {
-                        "key": "window_dekor-sheet0"
-                    },
-                    "x": 332,
-                    "y": -206,
-                    "scaleX": 1.5,
-                    "scaleY": 1.5,
-                    "angle": 34
-                },
-                {
-                    "type": "Image",
-                    "id": "704cc343-1cc3-465e-8052-45e881793671",
-                    "label": "window_dekor_sheet_2",
-                    "components": [],
-                    "texture": {
-                        "key": "window_dekor-sheet0"
-                    },
-                    "x": 394,
-                    "y": -147,
-                    "scaleX": 1.5,
-                    "scaleY": 1.5,
-                    "angle": 43,
-                    "flipX": true
+                    "x": 51,
+                    "y": -33
                 },
                 {
                     "type": "Image",
@@ -108,34 +50,12 @@
                         "CurserToPointer"
                     ],
                     "texture": {
-                        "key": "button_close-sheet0"
+                        "key": "Cross-button"
                     },
-                    "x": -402,
-                    "y": -172,
+                    "x": 334,
+                    "y": -298,
                     "scaleX": 1.2,
                     "scaleY": 1.2
-                },
-                {
-                    "type": "Image",
-                    "id": "32e21ed1-1118-4020-871c-e5a4ac05bc09",
-                    "label": "button_gold_win_sheet1",
-                    "components": [],
-                    "texture": {
-                        "key": "button_gold_win-sheet1"
-                    },
-                    "x": 208,
-                    "y": -83
-                },
-                {
-                    "type": "Image",
-                    "id": "4179985c-9068-473c-8c89-a5e076598928",
-                    "label": "button_arrow_sheet0",
-                    "components": [],
-                    "texture": {
-                        "key": "button_arrow-sheet0"
-                    },
-                    "x": 335,
-                    "y": -86
                 },
                 {
                     "type": "Image",
@@ -151,234 +71,14 @@
                 },
                 {
                     "type": "Image",
-                    "id": "2599d0df-9f8a-4f91-b5a2-e8277ba3b023",
-                    "label": "line",
-                    "components": [],
-                    "texture": {
-                        "key": "line"
-                    },
-                    "x": 213,
-                    "y": 37,
-                    "scaleX": 5,
-                    "scaleY": 2
-                },
-                {
-                    "type": "Container",
-                    "id": "de1fed53-963f-4077-89ea-97d4fb3c66d0",
-                    "label": "MusicButtonContainer",
-                    "scope": "CLASS",
-                    "components": [
-                        "OnHoverComponent",
-                        "ToggleButton",
-                        "CurserToPointer"
-                    ],
-                    "x": 86,
-                    "y": -7,
-                    "list": [
-                        {
-                            "type": "Image",
-                            "id": "1339be3e-fefc-4b29-85b8-34af7958d431",
-                            "label": "soundBtnOff",
-                            "scope": "CLASS",
-                            "components": [],
-                            "texture": {
-                                "key": "toggleBtnOff"
-                            },
-                            "x": 55,
-                            "y": 43
-                        },
-                        {
-                            "type": "Image",
-                            "id": "f73b7c57-3691-4cce-b65f-600482f93df6",
-                            "label": "soundBtnOn",
-                            "scope": "CLASS",
-                            "components": [
-                                "ToggleButton"
-                            ],
-                            "texture": {
-                                "key": "toggleBtnOn"
-                            },
-                            "x": 56,
-                            "y": 43
-                        }
-                    ]
-                },
-                {
-                    "type": "Container",
-                    "id": "ed4990e8-78ea-42eb-a346-fb78da32ae01",
-                    "label": "MusicButtonContainer_1",
-                    "scope": "CLASS",
-                    "components": [
-                        "OnHoverComponent",
-                        "ToggleButton"
-                    ],
-                    "x": 227,
-                    "y": -4,
-                    "list": [
-                        {
-                            "type": "Image",
-                            "id": "6d3c2643-25bb-4b32-ae14-c3d672854c25",
-                            "label": "toggleBtnOff",
-                            "components": [
-                                "ToggleButton"
-                            ],
-                            "texture": {
-                                "key": "toggleBtnOff"
-                            },
-                            "x": 60,
-                            "y": 37
-                        },
-                        {
-                            "type": "Image",
-                            "id": "9920d027-3e15-4de7-a7d4-09e3d45ec6e9",
-                            "label": "toggleBtnOn",
-                            "components": [
-                                "ToggleButton"
-                            ],
-                            "texture": {
-                                "key": "toggleBtnOn"
-                            },
-                            "x": 60,
-                            "y": 37
-                        }
-                    ]
-                },
-                {
-                    "type": "Text",
-                    "id": "0cbf4275-a4c8-4d1a-8e6e-fe975d5122e3",
-                    "label": "form_Btn_Text",
-                    "components": [],
-                    "x": 118,
-                    "y": 79,
-                    "text": "Form",
-                    "fontFamily": "New Times Roman",
-                    "fontSize": "20px",
-                    "color": "#f5ce2aff"
-                },
-                {
-                    "type": "Text",
-                    "id": "a47f7ce7-4003-4f04-8857-08e448b29874",
-                    "label": "form_Btn_Text_1",
-                    "components": [],
-                    "x": 231,
-                    "y": 81,
-                    "text": "With Rotation",
-                    "fontFamily": "New Times Roman",
-                    "fontSize": "20px",
-                    "color": "#f5ce2aff"
-                },
-                {
-                    "type": "Container",
-                    "id": "f1898e04-5d84-4de1-9a6f-95adf66ca650",
-                    "label": "StartGameBtnContainer",
-                    "scope": "CLASS",
-                    "components": [
-                        "OnHoverComponent"
-                    ],
-                    "list": [
-                        {
-                            "type": "Image",
-                            "id": "e255972b-10aa-4bcc-8d67-e4d0d90d3031",
-                            "label": "gold_button_3",
-                            "scope": "CLASS",
-                            "components": [],
-                            "texture": {
-                                "key": "gold-button-black"
-                            },
-                            "x": 200,
-                            "y": 188,
-                            "scaleX": 1.5
-                        },
-                        {
-                            "type": "Image",
-                            "id": "7b0f744c-d392-4aca-b1a8-004f2e33a922",
-                            "label": "button_gold_1",
-                            "scope": "CLASS",
-                            "components": [],
-                            "texture": {
-                                "key": "button_gold_win-sheet1"
-                            },
-                            "x": 198,
-                            "y": 191,
-                            "scaleX": 1.5
-                        },
-                        {
-                            "type": "Image",
-                            "id": "e86f3746-3313-4168-96a7-025c8929765e",
-                            "label": "gold_button",
-                            "scope": "CLASS",
-                            "components": [],
-                            "texture": {
-                                "key": "gold-button"
-                            },
-                            "x": 201,
-                            "y": 190,
-                            "scaleX": 1.5
-                        },
-                        {
-                            "type": "Text",
-                            "id": "fb56ddf6-eacf-4563-b890-8c25b2946bb0",
-                            "label": "startGame",
-                            "components": [],
-                            "x": 131,
-                            "y": 174,
-                            "text": "New Game",
-                            "fontFamily": "New Times Roman",
-                            "fontSize": "30px",
-                            "color": "#100d0dff"
-                        }
-                    ]
-                },
-                {
-                    "type": "Image",
-                    "id": "99c6bbb4-a2e2-4e8f-9e54-c83799765eb5",
-                    "label": "button_gold_win_sheet_1",
-                    "components": [],
-                    "texture": {
-                        "key": "button_gold_win-sheet1"
-                    },
-                    "x": -159,
-                    "y": 191,
-                    "scaleX": 1.5
-                },
-                {
-                    "type": "Image",
-                    "id": "9267e2bc-b5ad-4e68-8994-7af32bedbadd",
-                    "label": "daco_1495093",
-                    "components": [],
-                    "texture": {
-                        "key": "Daco_1495093"
-                    },
-                    "x": -189,
-                    "y": -23,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
-                    "id": "cac84d44-eb47-4f58-a1e6-01217894c4b9",
-                    "label": "img_newgame_sheet0",
-                    "components": [],
-                    "texture": {
-                        "key": "img_newgame-sheet0"
-                    },
-                    "x": -178,
-                    "y": -9,
-                    "scaleX": 0.5,
-                    "scaleY": 0.5
-                },
-                {
-                    "type": "Image",
                     "id": "2fb3b622-8864-4f64-8dd5-c28bb8f6c2c8",
                     "label": "preview_box_2",
                     "components": [],
                     "texture": {
-                        "key": "preview_box_2"
+                        "key": "square-2"
                     },
-                    "x": -181,
-                    "y": -12,
-                    "scaleX": 4.3,
-                    "scaleY": 4.3
+                    "x": 52,
+                    "y": -20
                 },
                 {
                     "type": "Image",
@@ -387,167 +87,138 @@
                     "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "9"
+                        "key": "image"
                     },
-                    "x": -183,
-                    "y": -11,
-                    "scaleX": 0.225,
-                    "scaleY": 0.19
+                    "x": 46,
+                    "y": -28
                 },
                 {
                     "type": "Image",
                     "id": "5278c5f9-6a28-48c6-910a-7b292e92f778",
-                    "label": "puzzlespreview_sheet0",
+                    "label": "dummyPuzzlePiece2",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "puzzlespreview-sheet0"
                     },
-                    "x": -130,
-                    "y": 32,
-                    "scaleX": 0.5894591890606568,
-                    "scaleY": 0.5707246661013834
+                    "x": 162,
+                    "y": 105,
+                    "originX": 1,
+                    "originY": 1
                 },
                 {
                     "type": "Image",
                     "id": "241ff046-2944-4ab5-ab15-10f095221cf7",
-                    "label": "puzzlespreview_sheet0__2_",
+                    "label": "dummyPuzzlePiece1",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
                         "key": "puzzlespreview-sheet0 (2)"
                     },
-                    "x": -235,
-                    "y": -54,
-                    "scaleX": 0.5894591890606568,
-                    "scaleY": 0.5707246661013834
+                    "x": -70,
+                    "y": -161,
+                    "originX": 0,
+                    "originY": 0
                 },
                 {
                     "type": "Image",
-                    "id": "fb657d76-6226-44ff-bc83-ac68a556c5f2",
-                    "label": "rounded_rectangle_filled_svgrepo_com",
+                    "id": "474b80e5-a063-4f98-a379-34388922dce0",
+                    "label": "choosing_button",
                     "components": [],
                     "texture": {
-                        "key": "rounded-rectangle-filled-svgrepo-com"
+                        "key": "choosing-button"
                     },
-                    "x": 208,
-                    "y": -83,
-                    "scaleX": 0.18950671362161725,
-                    "scaleY": 0.08382154088248875,
-                    "alpha": 0.4,
-                    "alphaTopLeft": 0.4,
-                    "alphaTopRight": 0.4,
-                    "alphaBottomLeft": 0.4,
-                    "alphaBottomRight": 0.4
-                },
-                {
-                    "type": "Text",
-                    "id": "2a7aa4f8-5b3d-4ad5-a293-051212ea4eac",
-                    "label": "text_1",
-                    "components": [],
-                    "x": 189,
-                    "y": -101,
-                    "text": "16",
-                    "fontFamily": "New Times Roman",
-                    "fontSize": "35px",
-                    "color": "#f6dc54ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "be56d2b4-683b-4df4-9169-1e36a9661145",
-                    "label": "levelPrev",
-                    "components": [],
-                    "x": 145,
-                    "y": -100,
-                    "alpha": 0.58,
-                    "alphaTopLeft": 0.58,
-                    "alphaTopRight": 0.58,
-                    "alphaBottomLeft": 0.58,
-                    "alphaBottomRight": 0.58,
-                    "text": "9",
-                    "fontFamily": "New Times Roman",
-                    "fontSize": "30px",
-                    "color": "#f6dc54ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "be249f4b-4678-4c0b-b7c9-61372b046316",
-                    "label": "levelNext",
-                    "components": [],
-                    "x": 250,
-                    "y": -98,
-                    "alpha": 0.5,
-                    "alphaTopLeft": 0.5,
-                    "alphaTopRight": 0.5,
-                    "alphaBottomLeft": 0.5,
-                    "alphaBottomRight": 0.5,
-                    "text": "25",
-                    "fontFamily": "New Times Roman",
-                    "fontSize": "30px",
-                    "color": "#f6dc54ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "c10d2206-e09e-4f60-ac06-0df68f201bcb",
-                    "label": "text_3",
-                    "components": [],
-                    "x": 130,
-                    "y": -178,
-                    "text": "Game Difficulty",
-                    "fontFamily": "New Times Roman",
-                    "fontSize": "25px",
-                    "color": "#f7e347ff"
+                    "x": 50,
+                    "y": 198
                 },
                 {
                     "type": "Image",
-                    "id": "98322b02-d4f7-44ab-a85f-dcf06b23d05e",
-                    "label": "rounded_rectangle_filled_svgrepo_com_1",
+                    "id": "f1635156-860a-489c-a337-4472b94dc9c5",
+                    "label": "new_game_button",
+                    "scope": "CLASS",
                     "components": [],
                     "texture": {
-                        "key": "rounded-rectangle-filled-svgrepo-com"
+                        "key": "New-game-button"
                     },
-                    "x": -157,
-                    "y": 191,
-                    "scaleX": 0.27369724377533666,
-                    "scaleY": 0.08347491781147881,
-                    "alpha": 0.6,
-                    "alphaTopLeft": 0.6,
-                    "alphaTopRight": 0.6,
-                    "alphaBottomLeft": 0.6,
-                    "alphaBottomRight": 0.6
-                },
-                {
-                    "type": "Text",
-                    "id": "db1f6475-a3b7-437f-bc71-3d9ebcdd578c",
-                    "label": "text_4",
-                    "components": [],
-                    "x": -257,
-                    "y": 176,
-                    "text": "Reward",
-                    "fontFamily": "New Times Roman",
-                    "fontSize": "25px",
-                    "color": "#f5e248ff"
-                },
-                {
-                    "type": "Text",
-                    "id": "f5ed1b02-f6fd-4eda-ba83-def7037cb109",
-                    "label": "text_5",
-                    "components": [],
-                    "x": -120,
-                    "y": 179,
-                    "text": "5",
-                    "fontFamily": "New Times Roman",
-                    "fontSize": "25px",
-                    "color": "#f5e248ff"
+                    "x": 54,
+                    "y": 369
                 },
                 {
                     "type": "Image",
-                    "id": "eb279d37-f8c8-4f3f-aac3-be81ed1359a2",
-                    "label": "icon_malahit_sheet0",
+                    "id": "983def0d-1662-475f-bcc0-e00c51449e1c",
+                    "label": "next_1",
                     "components": [],
                     "texture": {
-                        "key": "icon_malahit-sheet0"
+                        "key": "next-1"
                     },
-                    "x": -79,
-                    "y": 191
+                    "x": -48,
+                    "y": 203
+                },
+                {
+                    "type": "Image",
+                    "id": "2bd46baa-ecc1-409c-8fb9-e90c1db99ae6",
+                    "label": "next_2",
+                    "components": [],
+                    "texture": {
+                        "key": "next-2"
+                    },
+                    "x": 146,
+                    "y": 200
+                },
+                {
+                    "type": "Container",
+                    "id": "fb02b25f-0208-441f-b5a7-14a787f583d4",
+                    "label": "levelSelectorContainer",
+                    "scope": "CLASS",
+                    "components": [],
+                    "x": -21,
+                    "y": 391.2223205566406,
+                    "list": [
+                        {
+                            "type": "Text",
+                            "id": "d0d8b694-2e61-4f63-892c-4fc873d13cf9",
+                            "label": "prev-level",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 15,
+                            "y": -192.22232055664062,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "16",
+                            "fontFamily": "CookieSupplyRegular",
+                            "fontSize": "35px"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "f7d95ec5-43e7-4e01-b7a3-0b655840da01",
+                            "label": "current-level",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 70,
+                            "y": -191,
+                            "scaleX": 1.5,
+                            "scaleY": 1.5,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "25",
+                            "fontFamily": "CookieSupplyRegular",
+                            "fontSize": "35px"
+                        },
+                        {
+                            "type": "Text",
+                            "id": "18ba5d5d-4e5c-4587-88cc-ed8e692dd0c8",
+                            "label": "next-level",
+                            "scope": "CLASS",
+                            "components": [],
+                            "x": 123,
+                            "y": -191.22232055664062,
+                            "originX": 0.5,
+                            "originY": 0.5,
+                            "text": "49",
+                            "fontFamily": "CookieSupplyRegular",
+                            "fontSize": "35px"
+                        }
+                    ]
                 }
             ]
         }

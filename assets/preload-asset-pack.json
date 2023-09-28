@@ -2,6 +2,11 @@
     "section1": {
         "files": [
             {
+                "url": "assets/images/Preload Assets/Background preload.png",
+                "type": "image",
+                "key": "Background preload"
+            },
+            {
                 "url": "assets/animations/loadAnimations.json",
                 "type": "animation",
                 "key": "loadAnimations"
@@ -31,6 +36,16 @@
                 },
                 "type": "spritesheet",
                 "key": "loading_win-sheet1"
+            },
+            {
+                "url": "assets/images/Preload Assets/Logo.png",
+                "type": "image",
+                "key": "Logo"
+            },
+            {
+                "url": "assets/images/Preload Assets/Play-Button.png",
+                "type": "image",
+                "key": "Play-Button"
             }
         ]
     },

@@ -2,29 +2,554 @@
     "section1": {
         "files": [
             {
-                "url": "assets/images/bg-image.png",
+                "url": "assets/images/16/1.png",
                 "type": "image",
-                "key": "bg-image"
+                "key": "1"
             },
             {
-                "url": "assets/images/3.jpg",
+                "url": "assets/images/16/10.png",
                 "type": "image",
-                "key": "butterfly"
+                "key": "10"
             },
             {
-                "url": "assets/images/button_addcoin-sheet0.png",
+                "url": "assets/images/16/11.png",
                 "type": "image",
-                "key": "button_addcoin-sheet0"
+                "key": "11"
             },
             {
-                "url": "assets/images/button_arrow-sheet0.png",
+                "url": "assets/images/16/12.png",
                 "type": "image",
-                "key": "button_arrow-sheet0"
+                "key": "12"
             },
             {
-                "url": "assets/images/button_back-sheet0.png",
+                "url": "assets/images/16/13.png",
                 "type": "image",
-                "key": "button_back-sheet0"
+                "key": "13"
+            },
+            {
+                "url": "assets/images/16/14.png",
+                "type": "image",
+                "key": "14"
+            },
+            {
+                "url": "assets/images/16/15.png",
+                "type": "image",
+                "key": "15"
+            },
+            {
+                "url": "assets/images/16/16.png",
+                "type": "image",
+                "key": "16"
+            },
+            {
+                "url": "assets/images/Hyana16/16-1.png",
+                "type": "image",
+                "key": "16-1"
+            },
+            {
+                "url": "assets/images/Hyana16/16-10.png",
+                "type": "image",
+                "key": "16-10"
+            },
+            {
+                "url": "assets/images/Hyana16/16-11.png",
+                "type": "image",
+                "key": "16-11"
+            },
+            {
+                "url": "assets/images/Hyana16/16-12.png",
+                "type": "image",
+                "key": "16-12"
+            },
+            {
+                "url": "assets/images/Hyana16/16-13.png",
+                "type": "image",
+                "key": "16-13"
+            },
+            {
+                "url": "assets/images/Hyana16/16-14.png",
+                "type": "image",
+                "key": "16-14"
+            },
+            {
+                "url": "assets/images/Hyana16/16-15.png",
+                "type": "image",
+                "key": "16-15"
+            },
+            {
+                "url": "assets/images/Hyana16/16-16.png",
+                "type": "image",
+                "key": "16-16"
+            },
+            {
+                "url": "assets/images/Hyana16/16-2.png",
+                "type": "image",
+                "key": "16-2"
+            },
+            {
+                "url": "assets/images/Hyana16/16-3.png",
+                "type": "image",
+                "key": "16-3"
+            },
+            {
+                "url": "assets/images/Hyana16/16-4.png",
+                "type": "image",
+                "key": "16-4"
+            },
+            {
+                "url": "assets/images/Hyana16/16-5.png",
+                "type": "image",
+                "key": "16-5"
+            },
+            {
+                "url": "assets/images/Hyana16/16-6.png",
+                "type": "image",
+                "key": "16-6"
+            },
+            {
+                "url": "assets/images/Hyana16/16-7.png",
+                "type": "image",
+                "key": "16-7"
+            },
+            {
+                "url": "assets/images/Hyana16/16-8.png",
+                "type": "image",
+                "key": "16-8"
+            },
+            {
+                "url": "assets/images/Hyana16/16-9.png",
+                "type": "image",
+                "key": "16-9"
+            },
+            {
+                "url": "assets/images/16/2.png",
+                "type": "image",
+                "key": "2"
+            },
+            {
+                "url": "assets/images/25/1.png",
+                "type": "image",
+                "key": "25-1"
+            },
+            {
+                "url": "assets/images/25/12.png",
+                "type": "image",
+                "key": "25-10"
+            },
+            {
+                "url": "assets/images/25/13.png",
+                "type": "image",
+                "key": "25-11"
+            },
+            {
+                "url": "assets/images/25/14.png",
+                "type": "image",
+                "key": "25-12"
+            },
+            {
+                "url": "assets/images/25/15.png",
+                "type": "image",
+                "key": "25-13"
+            },
+            {
+                "url": "assets/images/25/16.png",
+                "type": "image",
+                "key": "25-14"
+            },
+            {
+                "url": "assets/images/25/2.png",
+                "type": "image",
+                "key": "25-15"
+            },
+            {
+                "url": "assets/images/25/3.png",
+                "type": "image",
+                "key": "25-16"
+            },
+            {
+                "url": "assets/images/25/17.png",
+                "type": "image",
+                "key": "25-17"
+            },
+            {
+                "url": "assets/images/25/18.png",
+                "type": "image",
+                "key": "25-18"
+            },
+            {
+                "url": "assets/images/25/19.png",
+                "type": "image",
+                "key": "25-19"
+            },
+            {
+                "url": "assets/images/25/10.png",
+                "type": "image",
+                "key": "25-2"
+            },
+            {
+                "url": "assets/images/25/20.png",
+                "type": "image",
+                "key": "25-20"
+            },
+            {
+                "url": "assets/images/25/21.png",
+                "type": "image",
+                "key": "25-21"
+            },
+            {
+                "url": "assets/images/25/22.png",
+                "type": "image",
+                "key": "25-22"
+            },
+            {
+                "url": "assets/images/25/23.png",
+                "type": "image",
+                "key": "25-23"
+            },
+            {
+                "url": "assets/images/25/24.png",
+                "type": "image",
+                "key": "25-24"
+            },
+            {
+                "url": "assets/images/25/25.png",
+                "type": "image",
+                "key": "25-25"
+            },
+            {
+                "url": "assets/images/25/4.png",
+                "type": "image",
+                "key": "25-3"
+            },
+            {
+                "url": "assets/images/25/5.png",
+                "type": "image",
+                "key": "25-4"
+            },
+            {
+                "url": "assets/images/25/6.png",
+                "type": "image",
+                "key": "25-5"
+            },
+            {
+                "url": "assets/images/25/7.png",
+                "type": "image",
+                "key": "25-6"
+            },
+            {
+                "url": "assets/images/25/8.png",
+                "type": "image",
+                "key": "25-7"
+            },
+            {
+                "url": "assets/images/25/9.png",
+                "type": "image",
+                "key": "25-8"
+            },
+            {
+                "url": "assets/images/25/11.png",
+                "type": "image",
+                "key": "25-9"
+            },
+            {
+                "url": "assets/images/16/3.png",
+                "type": "image",
+                "key": "3"
+            },
+            {
+                "url": "assets/images/16/4.png",
+                "type": "image",
+                "key": "4"
+            },
+            {
+                "url": "assets/images/49/1.png",
+                "type": "image",
+                "key": "49-1"
+            },
+            {
+                "url": "assets/images/49/10.png",
+                "type": "image",
+                "key": "49-10"
+            },
+            {
+                "url": "assets/images/49/11.png",
+                "type": "image",
+                "key": "49-11"
+            },
+            {
+                "url": "assets/images/49/12.png",
+                "type": "image",
+                "key": "49-12"
+            },
+            {
+                "url": "assets/images/49/13.png",
+                "type": "image",
+                "key": "49-13"
+            },
+            {
+                "url": "assets/images/49/14.png",
+                "type": "image",
+                "key": "49-14"
+            },
+            {
+                "url": "assets/images/49/15.png",
+                "type": "image",
+                "key": "49-15"
+            },
+            {
+                "url": "assets/images/49/16.png",
+                "type": "image",
+                "key": "49-16"
+            },
+            {
+                "url": "assets/images/49/17.png",
+                "type": "image",
+                "key": "49-17"
+            },
+            {
+                "url": "assets/images/49/18.png",
+                "type": "image",
+                "key": "49-18"
+            },
+            {
+                "url": "assets/images/49/19.png",
+                "type": "image",
+                "key": "49-19"
+            },
+            {
+                "url": "assets/images/49/6.png",
+                "type": "image",
+                "key": "49-2"
+            },
+            {
+                "url": "assets/images/49/20.png",
+                "type": "image",
+                "key": "49-20"
+            },
+            {
+                "url": "assets/images/49/21.png",
+                "type": "image",
+                "key": "49-21"
+            },
+            {
+                "url": "assets/images/49/22.png",
+                "type": "image",
+                "key": "49-22"
+            },
+            {
+                "url": "assets/images/49/23.png",
+                "type": "image",
+                "key": "49-23"
+            },
+            {
+                "url": "assets/images/49/24.png",
+                "type": "image",
+                "key": "49-24"
+            },
+            {
+                "url": "assets/images/49/25.png",
+                "type": "image",
+                "key": "49-25"
+            },
+            {
+                "url": "assets/images/49/26.png",
+                "type": "image",
+                "key": "49-26"
+            },
+            {
+                "url": "assets/images/49/27.png",
+                "type": "image",
+                "key": "49-27"
+            },
+            {
+                "url": "assets/images/49/28.png",
+                "type": "image",
+                "key": "49-28"
+            },
+            {
+                "url": "assets/images/49/29.png",
+                "type": "image",
+                "key": "49-29"
+            },
+            {
+                "url": "assets/images/49/3.png",
+                "type": "image",
+                "key": "49-3"
+            },
+            {
+                "url": "assets/images/49/30.png",
+                "type": "image",
+                "key": "49-30"
+            },
+            {
+                "url": "assets/images/49/31.png",
+                "type": "image",
+                "key": "49-31"
+            },
+            {
+                "url": "assets/images/49/32.png",
+                "type": "image",
+                "key": "49-32"
+            },
+            {
+                "url": "assets/images/49/33.png",
+                "type": "image",
+                "key": "49-33"
+            },
+            {
+                "url": "assets/images/49/34.png",
+                "type": "image",
+                "key": "49-34"
+            },
+            {
+                "url": "assets/images/49/35.png",
+                "type": "image",
+                "key": "49-35"
+            },
+            {
+                "url": "assets/images/49/36.png",
+                "type": "image",
+                "key": "49-36"
+            },
+            {
+                "url": "assets/images/49/37.png",
+                "type": "image",
+                "key": "49-37"
+            },
+            {
+                "url": "assets/images/49/38.png",
+                "type": "image",
+                "key": "49-38"
+            },
+            {
+                "url": "assets/images/49/39.png",
+                "type": "image",
+                "key": "49-39"
+            },
+            {
+                "url": "assets/images/49/4.png",
+                "type": "image",
+                "key": "49-4"
+            },
+            {
+                "url": "assets/images/49/40.png",
+                "type": "image",
+                "key": "49-40"
+            },
+            {
+                "url": "assets/images/49/41.png",
+                "type": "image",
+                "key": "49-41"
+            },
+            {
+                "url": "assets/images/49/42.png",
+                "type": "image",
+                "key": "49-42"
+            },
+            {
+                "url": "assets/images/49/43.png",
+                "type": "image",
+                "key": "49-43"
+            },
+            {
+                "url": "assets/images/49/44.png",
+                "type": "image",
+                "key": "49-44"
+            },
+            {
+                "url": "assets/images/49/45.png",
+                "type": "image",
+                "key": "49-45"
+            },
+            {
+                "url": "assets/images/49/46.png",
+                "type": "image",
+                "key": "49-46"
+            },
+            {
+                "url": "assets/images/49/47.png",
+                "type": "image",
+                "key": "49-47"
+            },
+            {
+                "url": "assets/images/49/48.png",
+                "type": "image",
+                "key": "49-48"
+            },
+            {
+                "url": "assets/images/49/49.png",
+                "type": "image",
+                "key": "49-49"
+            },
+            {
+                "url": "assets/images/49/5.png",
+                "type": "image",
+                "key": "49-5"
+            },
+            {
+                "url": "assets/images/49/2.png",
+                "type": "image",
+                "key": "49-6"
+            },
+            {
+                "url": "assets/images/49/7.png",
+                "type": "image",
+                "key": "49-7"
+            },
+            {
+                "url": "assets/images/49/8.png",
+                "type": "image",
+                "key": "49-8"
+            },
+            {
+                "url": "assets/images/49/9.png",
+                "type": "image",
+                "key": "49-9"
+            },
+            {
+                "url": "assets/images/16/5.png",
+                "type": "image",
+                "key": "5"
+            },
+            {
+                "url": "assets/images/16/6.png",
+                "type": "image",
+                "key": "6"
+            },
+            {
+                "url": "assets/images/16/7.png",
+                "type": "image",
+                "key": "7"
+            },
+            {
+                "url": "assets/images/16/8.png",
+                "type": "image",
+                "key": "8"
+            },
+            {
+                "url": "assets/images/16/9.png",
+                "type": "image",
+                "key": "9"
+            },
+            {
+                "url": "assets/images/Arrow.png",
+                "type": "image",
+                "key": "Arrow"
+            },
+            {
+                "url": "assets/images/Main Menu/Arrow.png",
+                "type": "image",
+                "key": "Arrow_1"
+            },
+            {
+                "url": "assets/images/choosing screen/Back-button.png",
+                "type": "image",
+                "key": "Back-button"
+            },
+            {
+                "url": "assets/images/Background.png",
+                "type": "image",
+                "key": "Background"
             },
             {
                 "url": "assets/images/button_big_green-sheet0.png",
@@ -35,16 +560,6 @@
                 "url": "assets/images/button_close-sheet0.png",
                 "type": "image",
                 "key": "button_close-sheet0"
-            },
-            {
-                "url": "assets/images/button_gold_win-sheet1.png",
-                "type": "image",
-                "key": "button_gold_win-sheet1"
-            },
-            {
-                "url": "assets/images/button_info-sheet0.png",
-                "type": "image",
-                "key": "button_info-sheet0"
             },
             {
                 "url": "assets/images/button_language-sheet0.png",
@@ -62,129 +577,44 @@
                 "key": "button_options-sheet2"
             },
             {
-                "url": "assets/images/button_present-sheet0.png",
+                "url": "assets/images/Game difficulty screen/choosing-button.png",
                 "type": "image",
-                "key": "button_present-sheet0"
+                "key": "choosing-button"
             },
             {
-                "url": "assets/images/button_winner-sheet0 (1).png",
+                "url": "assets/images/choosing screen/Choosing-screen.png",
                 "type": "image",
-                "key": "button_winner-sheet0 (1)"
+                "key": "Choosing-screen"
             },
             {
-                "url": "assets/images/button_winner-sheet0 (1) (1).png",
+                "url": "assets/images/Conclusion Screen Assets/Continue-button.png",
                 "type": "image",
-                "key": "button_winner-sheet0 (1) (1)"
+                "key": "Continue-button"
             },
             {
-                "url": "assets/images/button_winner-sheet0 (1) (2).png",
-                "type": "image",
-                "key": "button_winner-sheet0 (1) (2)"
+                "url": "assets/fonts/CookieSupplyRegular.otf",
+                "type": "binary",
+                "key": "CookieSupplyRegular"
             },
             {
-                "url": "assets/images/buttons_main-sheet0.png",
+                "url": "assets/images/Game difficulty screen/Cross-button.png",
                 "type": "image",
-                "key": "buttons_main-sheet0"
-            },
-            {
-                "url": "assets/images/9.jpg",
-                "type": "image",
-                "key": "cat"
-            },
-            {
-                "url": "assets/images/Cat/cat_part1.png",
-                "type": "image",
-                "key": "cat_part1"
-            },
-            {
-                "url": "assets/images/Cat/cat_part10.png",
-                "type": "image",
-                "key": "cat_part10"
-            },
-            {
-                "url": "assets/images/Cat/cat_part11.png",
-                "type": "image",
-                "key": "cat_part11"
-            },
-            {
-                "url": "assets/images/Cat/cat_part12.png",
-                "type": "image",
-                "key": "cat_part12"
-            },
-            {
-                "url": "assets/images/Cat/cat_part13.png",
-                "type": "image",
-                "key": "cat_part13"
-            },
-            {
-                "url": "assets/images/Cat/cat_part14.png",
-                "type": "image",
-                "key": "cat_part14"
-            },
-            {
-                "url": "assets/images/Cat/cat_part15.png",
-                "type": "image",
-                "key": "cat_part15"
-            },
-            {
-                "url": "assets/images/Cat/cat_part16.png",
-                "type": "image",
-                "key": "cat_part16"
-            },
-            {
-                "url": "assets/images/Cat/cat_part2.png",
-                "type": "image",
-                "key": "cat_part2"
-            },
-            {
-                "url": "assets/images/Cat/cat_part3.png",
-                "type": "image",
-                "key": "cat_part3"
-            },
-            {
-                "url": "assets/images/Cat/cat_part4.png",
-                "type": "image",
-                "key": "cat_part4"
-            },
-            {
-                "url": "assets/images/Cat/cat_part5.png",
-                "type": "image",
-                "key": "cat_part5"
-            },
-            {
-                "url": "assets/images/Cat/cat_part6.png",
-                "type": "image",
-                "key": "cat_part6"
-            },
-            {
-                "url": "assets/images/Cat/cat_part7.png",
-                "type": "image",
-                "key": "cat_part7"
-            },
-            {
-                "url": "assets/images/Cat/cat_part8.png",
-                "type": "image",
-                "key": "cat_part8"
-            },
-            {
-                "url": "assets/images/Cat/cat_part9.png",
-                "type": "image",
-                "key": "cat_part9"
-            },
-            {
-                "url": "assets/images/Category.png",
-                "type": "image",
-                "key": "Category"
-            },
-            {
-                "url": "assets/images/Create.png",
-                "type": "image",
-                "key": "Create"
+                "key": "Cross-button"
             },
             {
                 "url": "src/components/CurserToPointer.js",
                 "type": "script",
                 "key": "CurserToPointer"
+            },
+            {
+                "url": "assets/images/Curtain-right.png",
+                "type": "image",
+                "key": "Curtain-right"
+            },
+            {
+                "url": "assets/images/Curtains-left.png",
+                "type": "image",
+                "key": "Curtains-left"
             },
             {
                 "url": "src/Prefab/CurtenPrefab.js",
@@ -197,49 +627,29 @@
                 "key": "Daco_1495093"
             },
             {
-                "url": "assets/images/Daily.png",
+                "url": "assets/images/GamePlayMenus/Exist-button.png",
                 "type": "image",
-                "key": "Daily"
+                "key": "Exist-button"
             },
             {
-                "url": "assets/images/download (2).png",
+                "url": "assets/images/GamePlayMenus/Exist-button (1).png",
                 "type": "image",
-                "key": "download (2)"
+                "key": "Exist-button (1)"
             },
             {
-                "url": "assets/images/elegant-golden-frame-free-png.webp",
+                "url": "assets/images/Frame.png",
                 "type": "image",
-                "key": "elegant-golden-frame-free-png"
+                "key": "Frame"
             },
             {
-                "url": "assets/images/fav_puzzle.png",
+                "url": "assets/images/Game difficulty screen/Game-difficulty-board.png",
                 "type": "image",
-                "key": "fav_puzzle"
+                "key": "Game-difficulty-board"
             },
             {
-                "url": "assets/images/Filter.png",
+                "url": "assets/images/Game difficulty screen/Game-difficulty-screen.png",
                 "type": "image",
-                "key": "Filter"
-            },
-            {
-                "url": "assets/images/floppy-disk.png",
-                "type": "image",
-                "key": "floppy-disk"
-            },
-            {
-                "url": "assets/images/floppy-disk (1).png",
-                "type": "image",
-                "key": "floppy-disk (1)"
-            },
-            {
-                "url": "assets/images/2.jpg",
-                "type": "image",
-                "key": "flower"
-            },
-            {
-                "url": "assets/images/galleryback_0.png",
-                "type": "image",
-                "key": "galleryback_0"
+                "key": "Game-difficulty-screen"
             },
             {
                 "url": "src/scripts/GameManager.js",
@@ -282,6 +692,11 @@
                 "key": "Hint"
             },
             {
+                "url": "assets/images/GamePlayMenus/Hint.png",
+                "type": "image",
+                "key": "Hint_1"
+            },
+            {
                 "url": "assets/images/5.jpg",
                 "type": "image",
                 "key": "ice-cream"
@@ -292,19 +707,39 @@
                 "key": "icon_malahit-sheet0"
             },
             {
-                "url": "assets/images/img_continuegame-sheet0.png",
+                "url": "assets/images/Game difficulty screen/image.png",
                 "type": "image",
-                "key": "img_continuegame-sheet0"
+                "key": "image"
             },
             {
-                "url": "assets/images/img_myphotos-sheet0.png",
+                "url": "assets/images/choosing screen/Image-1.png",
                 "type": "image",
-                "key": "img_myphotos-sheet0"
+                "key": "Image-1"
             },
             {
-                "url": "assets/images/img_newgame-sheet0.png",
+                "url": "assets/images/choosing screen/Image-2.png",
                 "type": "image",
-                "key": "img_newgame-sheet0"
+                "key": "Image-2"
+            },
+            {
+                "url": "assets/images/choosing screen/Image-3.png",
+                "type": "image",
+                "key": "Image-3"
+            },
+            {
+                "url": "assets/images/choosing screen/Image-4.png",
+                "type": "image",
+                "key": "Image-4"
+            },
+            {
+                "url": "assets/images/choosing screen/Image-5.png",
+                "type": "image",
+                "key": "Image-5"
+            },
+            {
+                "url": "assets/images/choosing screen/Image-6.png",
+                "type": "image",
+                "key": "Image-6"
             },
             {
                 "url": "src/scripts/InputManager.js",
@@ -312,29 +747,29 @@
                 "key": "InputManager"
             },
             {
-                "url": "assets/images/jigsaw_logo.png",
+                "url": "assets/images/Game difficulty screen/New-game-button.png",
                 "type": "image",
-                "key": "jigsaw_logo"
+                "key": "New-game-button"
             },
             {
-                "url": "assets/images/line.png",
+                "url": "assets/images/Main Menu/New-Game-Pop-Up.png",
                 "type": "image",
-                "key": "line"
+                "key": "New-Game-Pop-Up"
             },
             {
-                "url": "assets/images/line_game-sheet0.png",
+                "url": "assets/images/Game difficulty screen/next-1.png",
                 "type": "image",
-                "key": "line_game-sheet0"
+                "key": "next-1"
             },
             {
-                "url": "assets/images/loading_logo-sheet0.png",
+                "url": "assets/images/Game difficulty screen/next-2.png",
                 "type": "image",
-                "key": "loading_logo-sheet0"
+                "key": "next-2"
             },
             {
-                "url": "assets/images/loading_logo-sheet1.png",
+                "url": "assets/images/choosing screen/Next-button.png",
                 "type": "image",
-                "key": "loading_logo-sheet1"
+                "key": "Next-button"
             },
             {
                 "url": "src/components/OnHoverComponent.js",
@@ -347,49 +782,19 @@
                 "key": "openingCurtens"
             },
             {
-                "url": "assets/images/panel_h.png",
+                "url": "assets/images/Photo.png",
                 "type": "image",
-                "key": "panel_h"
+                "key": "Photo"
             },
             {
-                "url": "assets/images/part10.png",
+                "url": "assets/images/Piece-Holder.png",
                 "type": "image",
-                "key": "part10"
+                "key": "Piece-Holder"
             },
             {
-                "url": "assets/images/part4.png",
+                "url": "assets/images/Main Menu/Profile.png",
                 "type": "image",
-                "key": "part4"
-            },
-            {
-                "url": "assets/images/part9.png",
-                "type": "image",
-                "key": "part9"
-            },
-            {
-                "url": "assets/images/pngfind.com-gold-frame-png-578767.png",
-                "type": "image",
-                "key": "pngfind.com-gold-frame-png-578767"
-            },
-            {
-                "url": "assets/images/pngwing.com (4).png",
-                "type": "image",
-                "key": "pngwing.com (4)"
-            },
-            {
-                "url": "assets/images/present-sheet0.png",
-                "type": "image",
-                "key": "present-sheet0"
-            },
-            {
-                "url": "assets/images/preview_box.png",
-                "type": "image",
-                "key": "preview_box"
-            },
-            {
-                "url": "assets/images/preview_box_2.png",
-                "type": "image",
-                "key": "preview_box_2"
+                "key": "Profile"
             },
             {
                 "url": "src/Prefab/ProfilePrefab.js",
@@ -412,19 +817,14 @@
                 "key": "puzzlespreview-sheet0 (2)"
             },
             {
-                "url": "assets/images/rounded-rectangle-filled-svgrepo-com.png",
+                "url": "assets/images/GamePlayMenus/Sample Icon.png",
                 "type": "image",
-                "key": "rounded-rectangle-filled-svgrepo-com"
+                "key": "Sample Icon"
             },
             {
-                "url": "assets/images/rounded-rectangle-filled-svgrepo-com (1).png",
+                "url": "assets/images/Scroll-Holder.png",
                 "type": "image",
-                "key": "rounded-rectangle-filled-svgrepo-com (1)"
-            },
-            {
-                "url": "assets/images/Sample.png",
-                "type": "image",
-                "key": "Sample"
+                "key": "Scroll-Holder"
             },
             {
                 "url": "src/Prefab/SelectPuzzle.js",
@@ -432,24 +832,19 @@
                 "key": "SelectPuzzle"
             },
             {
-                "url": "assets/images/buttons_main-sheet1.png",
+                "url": "assets/images/Main Menu/Setting.png",
                 "type": "image",
-                "key": "setting-button"
+                "key": "Setting"
             },
             {
-                "url": "assets/images/share.png",
+                "url": "assets/images/GamePlayMenus/Settings-Icon.png",
                 "type": "image",
-                "key": "share"
+                "key": "Settings-Icon"
             },
             {
-                "url": "assets/images/share (1).png",
+                "url": "assets/images/GamePlayMenus/Show-Edges-Icon.png",
                 "type": "image",
-                "key": "share (1)"
-            },
-            {
-                "url": "assets/images/ShowEdges.png",
-                "type": "image",
-                "key": "ShowEdges"
+                "key": "Show-Edges-Icon"
             },
             {
                 "url": "assets/images/Shuffle.png",
@@ -457,9 +852,24 @@
                 "key": "Shuffle"
             },
             {
+                "url": "assets/images/GamePlayMenus/Shuffle.png",
+                "type": "image",
+                "key": "Shuffle_1"
+            },
+            {
                 "url": "src/scripts/SocketManager.js",
                 "type": "script",
                 "key": "SocketManager"
+            },
+            {
+                "url": "assets/images/GamePlayMenus/Sound-icon.png",
+                "type": "image",
+                "key": "Sound-icon"
+            },
+            {
+                "url": "assets/images/GamePlayMenus/Sound-icon (1).png",
+                "type": "image",
+                "key": "Sound-icon (1)"
             },
             {
                 "url": "src/scripts/SoundManager.js",
@@ -467,19 +877,29 @@
                 "key": "SoundManager"
             },
             {
-                "url": "assets/images/squareBorder.png",
+                "url": "assets/images/Conclusion Screen Assets/Spotlight.png",
                 "type": "image",
-                "key": "squareBorder"
+                "key": "Spotlight"
             },
             {
-                "url": "assets/images/button_switch-sheet0.png",
+                "url": "assets/images/choosing screen/Square.png",
                 "type": "image",
-                "key": "toggleBtnOff"
+                "key": "Square"
             },
             {
-                "url": "assets/images/button_switch-sheet1.png",
+                "url": "assets/images/Game difficulty screen/square-2.png",
                 "type": "image",
-                "key": "toggleBtnOn"
+                "key": "square-2"
+            },
+            {
+                "url": "assets/images/GamePlayMenus/Stick.png",
+                "type": "image",
+                "key": "Stick"
+            },
+            {
+                "url": "assets/images/Conclusion Screen Assets/Time-Board.png",
+                "type": "image",
+                "key": "Time-Board"
             },
             {
                 "url": "src/components/ToggleButton.js",
@@ -487,44 +907,19 @@
                 "key": "ToggleButton"
             },
             {
-                "url": "assets/images/7.jpg",
-                "type": "image",
-                "key": "tulips"
-            },
-            {
-                "url": "assets/images/6.jpg",
-                "type": "image",
-                "key": "turtle"
-            },
-            {
                 "url": "src/scripts/TweenManager.js",
                 "type": "script",
                 "key": "TweenManager"
             },
             {
-                "url": "assets/images/window.png",
+                "url": "assets/images/GamePlayMenus/Zoom-In.png",
                 "type": "image",
-                "key": "window"
+                "key": "Zoom-In"
             },
             {
-                "url": "assets/images/window_dekor-sheet0.png",
+                "url": "assets/images/GamePlayMenus/Zoom-Out.png",
                 "type": "image",
-                "key": "window_dekor-sheet0"
-            },
-            {
-                "url": "assets/images/wood_back.png",
-                "type": "image",
-                "key": "wood_back"
-            },
-            {
-                "url": "assets/images/Zoom In.png",
-                "type": "image",
-                "key": "Zoom In"
-            },
-            {
-                "url": "assets/images/Zoom Out.png",
-                "type": "image",
-                "key": "Zoom Out"
+                "key": "Zoom-Out"
             }
         ]
     },
